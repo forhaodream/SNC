@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/标题栏"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/返回"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/zuo"/>
+
+
+        <TextView
+            android:id="@+id/layout_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="完善名片信息"
+            android:textColor="@color/text_grays"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/我"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="我"
+            android:textSize="15sp"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:text="请从下方选择身份(只能选择一个)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"/>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        app:flChildSpacing="7dp"
+        app:flRowSpacing="8dp"/>
+</com.zhy.autolayout.AutoLinearLayout>

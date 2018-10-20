@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/标题"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/介绍"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@id/标题"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:textColor="@color/text_grays"/>
+
+    <View
+
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15px"
+        android:layout_marginBottom="15px"
+        android:background="@color/text_grays"/>
+
+    <TextView
+        android:id="@+id/价格"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30px"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+</com.zhy.autolayout.AutoRelativeLayout>

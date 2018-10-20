@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.czy1121:bannerview-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bannerview-1.0.2.aar/cbd700adf5a933d628e98bec816a8363/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bannerview-1.0.2.aar/cbd700adf5a933d628e98bec816a8363/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.czy1121/bannerview/1.0.2/fe47033a875999daefb00c978702eaf6fdb0737d/bannerview-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

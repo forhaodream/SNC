@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<declare-styleable name="TitleLayout">-->
+
+        <!--<attr name="title" format="string"/>-->
+        <!--<attr name="drawable_left" format="reference"/>-->
+        <!--<attr name="drawable_right" format="reference"/>-->
+        <!--<attr name="line_color" format="color"/>-->
+        <!--<attr name="line_height" format="integer"/>-->
+
+    <!--</declare-styleable>-->
+
+
+    <declare-styleable name="VSSView">
+        <attr name="view_type" format="string" />
+        <attr name="editText_title" format="string" />
+        <attr name="editText_hint" format="string" />
+        <attr name="editText_value" format="string" />
+        <attr name="textView_title" format="string" />
+        <attr name="textView_value" format="string" />
+        <attr name="showView1_head" format="reference|color" />
+        <attr name="showView1_title" format="string" />
+        <attr name="showView2_title" format="string" />
+        <attr name="choose_title" format="string" />
+        <attr name="choose_value" format="string" />
+        <attr name="photo_title" format="string" />
+        <attr name="photo_value" format="reference|color" />
+    </declare-styleable>
+</resources>
