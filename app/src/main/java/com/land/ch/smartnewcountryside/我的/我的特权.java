@@ -33,6 +33,7 @@ public class 我的特权 extends AppCompatActivity {
     private Handler mHandler;
     private String[] titles;
     private MyAdapter adapter;
+    private TypeNotPresentException mTypeNotPresentException;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
