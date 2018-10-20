@@ -12,6 +12,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
@@ -35,6 +36,7 @@ public class 我的特权 extends AppCompatActivity {
     private MyAdapter adapter;
     private TypeNotPresentException mTypeNotPresentException;
     private TypeNotPresentException m1TypeNotPresentException;
+    private Button mButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
