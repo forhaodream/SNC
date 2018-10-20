@@ -34,11 +34,7 @@ public class 我的特权 extends AppCompatActivity {
     private Handler mHandler;
     private String[] titles;
     private MyAdapter adapter;
-    private TypeNotPresentException mTypeNotPresentException;
-    private TypeNotPresentException m1TypeNotPresentException;
-    private Button mButton;
-    //测试
-    //111
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
