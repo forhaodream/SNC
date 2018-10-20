@@ -24,11 +24,13 @@ import com.land.ch.smartnewcountryside.我的认证.待评价;
 import java.util.ArrayList;
 import java.util.List;
 
+import ch.chtool.base.BaseActivity;
+
 /**
  * Created by CH
- * on 2018/10/18 15:04
+ * on 2018/10/20 15:29
  */
-public class 我的订单 extends AppCompatActivity {
+public class 我的评价 extends AppCompatActivity {
     private ImageView returnImg;
     private TabLayout tab;
     private ViewPager pager;
@@ -47,7 +49,7 @@ public class 我的订单 extends AppCompatActivity {
 
     public void initData() {
         mFragmentList = new ArrayList<>();
-        titles = new String[]{"全部", "待确认", "待发货", "已发货", "待评价"};
+        titles = new String[]{"待评价", "已评价"};
         //页面，数据源
         mFragmentList.add(new 全部());
         mFragmentList.add(new 待确认());

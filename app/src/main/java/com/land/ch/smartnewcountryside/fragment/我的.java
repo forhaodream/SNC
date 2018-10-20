@@ -16,10 +16,12 @@ import com.land.ch.smartnewcountryside.R;
 import com.land.ch.smartnewcountryside.activity.HomeActivity;
 import com.land.ch.smartnewcountryside.view.VSSView;
 import com.land.ch.smartnewcountryside.我的.我的动态;
+import com.land.ch.smartnewcountryside.我的.我的订单;
 import com.land.ch.smartnewcountryside.我的.我的认证;
 import com.land.ch.smartnewcountryside.我的.我的通知;
 import com.land.ch.smartnewcountryside.我的.设置;
 import com.zhy.autolayout.AutoLinearLayout;
+import com.zhy.autolayout.AutoRelativeLayout;
 
 import ch.chtool.view.MyGridView;
 
@@ -81,7 +83,7 @@ public class 我的 extends Fragment implements View.OnClickListener {
      * 设置
      */
     private Button 设置btn;
-
+    private AutoRelativeLayout mMyOrder;
 
     @Nullable
     @Override
@@ -148,6 +150,8 @@ public class 我的 extends Fragment implements View.OnClickListener {
         客服电话.setOnClickListener(this);
         设置btn = (Button) mView.findViewById(R.id.设置btn);
         设置btn.setOnClickListener(this);
+        mMyOrder = mView.findViewById(R.id.mine_my_order);
+        mMyOrder.setOnClickListener(this);
     }
 
     @Override
@@ -175,6 +179,9 @@ public class 我的 extends Fragment implements View.OnClickListener {
                 break;
             case R.id.设置btn:
                 startActivity(new Intent(getActivity(), 设置.class));
+                break;
+            case R.id.mine_my_order:
+                startActivity(new Intent(getActivity(), 我的订单.class));
                 break;
         }
     }

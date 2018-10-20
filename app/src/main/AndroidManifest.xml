@@ -39,6 +39,9 @@
             android:name=".我的.我的动态"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".我的.我的订单"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".我的.设置"
             android:screenOrientation="portrait"/>
         <activity android:name=".我的.收货地址"/>
