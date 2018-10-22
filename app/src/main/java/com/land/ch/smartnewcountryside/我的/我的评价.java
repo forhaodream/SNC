@@ -15,16 +15,11 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
-import com.land.ch.smartnewcountryside.我的认证.全部;
-import com.land.ch.smartnewcountryside.我的认证.已发货;
-import com.land.ch.smartnewcountryside.我的认证.待发货;
-import com.land.ch.smartnewcountryside.我的认证.待确认;
 import com.land.ch.smartnewcountryside.我的认证.待评价;
+import com.land.ch.smartnewcountryside.我的评价.已评价;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import ch.chtool.base.BaseActivity;
 
 /**
  * Created by CH
@@ -51,11 +46,8 @@ public class 我的评价 extends AppCompatActivity {
         mFragmentList = new ArrayList<>();
         titles = new String[]{"待评价", "已评价"};
         //页面，数据源
-        mFragmentList.add(new 全部());
-        mFragmentList.add(new 待确认());
-        mFragmentList.add(new 待发货());
-        mFragmentList.add(new 已发货());
         mFragmentList.add(new 待评价());
+        mFragmentList.add(new 已评价());
         Intent intent = new Intent("android.intent.action.CART_BROADCAST");
         intent.putExtra("data", "refresh");
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);

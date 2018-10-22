@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="我的评价"
+            android:text="我收到的评价"
             android:textColor="@color/text_grays"
             android:textSize="14sp"/>
 
@@ -37,51 +37,56 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="30px"
-            android:text="我收到的评价"
+            android:text="我的评价"
             android:textColor="@color/text_grays"
             android:textSize="14sp"/>
     </com.zhy.autolayout.AutoRelativeLayout>
 
-    <com.zhy.autolayout.AutoRelativeLayout
+    <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
-        android:layout_height="130px"
-        android:background="@android:color/white">
+        android:layout_height="400px"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/供应商数量tv"
+        <com.land.ch.smartnewcountryside.view.MyRatingBar
+            android:id="@+id/ratingbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="共评价0个供应商"/>
-    </com.zhy.autolayout.AutoRelativeLayout>
+            app:starCount="5"
+            app:starEmpty="@mipmap/star_hui"
+            app:starFill="@mipmap/star"
+            app:starHalf="@mipmap/star"
+            app:starImageSize="18dp"
+            app:starPadding="1dp"
+            app:stepSize="Half"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="26px"
-        android:layout_marginTop="1px"
-        android:background="#FAFAFA"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal">
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="130px"
-        android:layout_marginTop="30px"
-        android:background="@android:color/white"
-        app:tabIndicatorColor="@color/text_orange"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/text_orange"
-        app:tabTextColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共收到评价0个"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginTop="1px"
-        android:background="@color/text_grays"/>
+            <TextView
+                android:id="@+id/comment_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:text="总评分0.00"/>
+        </com.zhy.autolayout.AutoLinearLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/如何获得"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:text="如何获得更高信誉分?"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
 </com.zhy.autolayout.AutoLinearLayout>
