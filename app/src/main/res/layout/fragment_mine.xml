@@ -43,11 +43,11 @@
 
                 <ImageView
                     android:id="@+id/头像"
-                    android:layout_width="90px"
-                    android:layout_height="90px"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="30px"
-                    android:src="@color/shengwu"/>
+                    android:src="@mipmap/touxiang"/>
 
                 <TextView
                     android:id="@+id/名字"
@@ -73,12 +73,12 @@
                     android:textSize="13sp"/>
 
                 <ImageView
-                    android:layout_width="60px"
-                    android:layout_height="60px"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="30px"
-                    android:src="@color/shengwu"/>
+                    android:src="@mipmap/you"/>
 
                 <ImageView
                     android:layout_width="60px"
@@ -86,7 +86,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="130px"
-                    android:src="@color/shengwu"/>
+                    android:src="@mipmap/shenfenzheng"/>
             </com.zhy.autolayout.AutoRelativeLayout>
 
             <View
@@ -98,7 +98,7 @@
                 android:id="@+id/我的通知VSSView"
                 android:layout_width="match_parent"
                 android:layout_height="130px"
-                app:showView1_head="@color/shengwu"
+                app:showView1_head="@mipmap/wodetongzhi"
                 app:showView1_title="我的通知"
                 app:view_type="show1"/>
 
@@ -106,7 +106,7 @@
                 android:id="@+id/我的认证VSSView"
                 android:layout_width="match_parent"
                 android:layout_height="130px"
-                app:showView1_head="@color/shengwu"
+                app:showView1_head="@mipmap/woderenzheng"
                 app:showView1_title="我的认证"
                 app:view_type="show1"/>
 
@@ -114,7 +114,7 @@
                 android:id="@+id/我的动态VSSView"
                 android:layout_width="match_parent"
                 android:layout_height="130px"
-                app:showView1_head="@color/shengwu"
+                app:showView1_head="@mipmap/wodedongtai"
                 app:showView1_title="我的动态"
                 app:view_type="show1"/>
 
@@ -170,10 +170,10 @@
 
                         <ImageView
                             android:id="@+id/img_six"
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/daifukuan"/>
 
                         <TextView
                             android:id="@+id/tv_six"
@@ -197,10 +197,10 @@
 
                         <ImageView
                             android:id="@+id/img_seven"
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/daifahuo"/>
 
                         <TextView
                             android:id="@+id/tv_seven"
@@ -224,10 +224,10 @@
 
                         <ImageView
                             android:id="@+id/img_eight"
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/daishouhuo"/>
 
                         <TextView
                             android:id="@+id/tv_eight"
@@ -251,10 +251,10 @@
 
                         <ImageView
                             android:id="@+id/img_nine"
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/daipingjia"/>
 
                         <TextView
                             android:id="@+id/tv_nine"
@@ -278,10 +278,10 @@
 
                         <ImageView
                             android:id="@+id/img_ten"
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/tuikuan"/>
 
                         <TextView
                             android:id="@+id/tv_ten"
@@ -307,12 +307,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="180px"
                 android:scaleType="fitXY"
-                android:src="@color/color_5"/>
+                android:src="@mipmap/wodeguanggao"/>
 
             <ch.chtool.view.MyGridView
                 android:id="@+id/我的分类标签"
                 android:layout_width="match_parent"
-                android:layout_height="400px"/>
+                android:layout_height="400px"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="10px"
+                android:numColumns="4"
+                android:scrollbars="none"/>
 
             <View
                 android:layout_width="match_parent"
@@ -357,10 +361,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/changjianwenti"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -382,10 +386,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/yiijanfankui"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -407,10 +411,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/guanyuwomen"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -432,10 +436,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="140px"
-                            android:layout_height="140px"
+                            android:layout_width="70px"
+                            android:layout_height="70px"
                             android:layout_centerHorizontal="true"
-                            android:src="@color/color_5"/>
+                            android:src="@mipmap/kefudianhua"/>
 
                         <TextView
                             android:layout_width="wrap_content"

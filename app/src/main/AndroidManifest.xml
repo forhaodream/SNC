@@ -36,10 +36,46 @@
             android:name=".我的.我的认证"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".我的.我的评价"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.银行账户"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.支付安全"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.我的收藏"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.我的特权"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.全城热恋"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.图片看病"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.招聘信息"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".我的.我的动态"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".我的.我的订单"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.我的田币"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.我的招聘"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.我的村庄"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".完善名片信息.完善个人信息"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".我的.设置"

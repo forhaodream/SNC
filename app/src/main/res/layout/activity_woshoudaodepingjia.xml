@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     android:orientation="vertical">
 
     <com.zhy.autolayout.AutoRelativeLayout
@@ -45,18 +44,21 @@
     <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="400px"
+        android:background="@android:color/white"
         android:orientation="vertical">
 
         <com.land.ch.smartnewcountryside.view.MyRatingBar
             android:id="@+id/ratingbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
             app:starCount="5"
             app:starEmpty="@mipmap/star_hui"
             app:starFill="@mipmap/star"
             app:starHalf="@mipmap/star"
-            app:starImageSize="18dp"
-            app:starPadding="1dp"
+            app:starImageSize="28dp"
+            app:starPadding="3dp"
             app:stepSize="Half"/>
 
         <com.zhy.autolayout.AutoLinearLayout
@@ -89,4 +91,18 @@
             android:text="如何获得更高信誉分?"/>
 
     </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12px"
+        android:background="@color/view_hui"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:text="@string/comment_text"
+        android:textSize="15sp"/>
+
 </com.zhy.autolayout.AutoLinearLayout>

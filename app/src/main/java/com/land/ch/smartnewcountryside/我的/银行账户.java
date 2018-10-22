@@ -6,19 +6,21 @@ import ch.chtool.base.BaseActivity;
 
 /**
  * Created by CH
- * on 2018/10/18 16:54
+ * on 2018/10/22 09:45
  */
-public class 实名认证 extends BaseActivity {
+public class 银行账户 extends BaseActivity {
     @Override
     public int initLayout() {
-        return R.layout.activity_shimingrenzheng;
+        return R.layout.activity_tupiankanbing;
     }
 
     @Override
     public void initView() {
+
     }
 
     @Override
     public void initData() {
+
     }
 }

@@ -1,5 +1,7 @@
 package com.land.ch.smartnewcountryside.我的;
 
+import com.land.ch.smartnewcountryside.R;
+
 import ch.chtool.base.BaseActivity;
 
 /**
@@ -9,7 +11,7 @@ import ch.chtool.base.BaseActivity;
 public class 编辑收货地址 extends BaseActivity {
     @Override
     public int initLayout() {
-        return 0;
+        return R.layout.activity_tupiankanbing;
     }
 
     @Override
