@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/layout_title_rlc"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/layout_title_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/layout_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全网热恋"
+            android:textColor="@color/text_grays"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/发布tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="发布"
+            android:textColor="@color/text_grays"
+            android:textSize="14sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.land.ch.smartnewcountryside.view.DropDownMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:dddividerColor="@android:color/white"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuIconToRight="true"
+        app:ddmenuSelectedIcon="@mipmap/sanjiaoxia"
+        app:ddmenuTextSize="13sp"
+        app:ddmenuUnselectedIcon="@mipmap/sanjiaoshang"
+        app:ddtextSelectedColor="@color/drop_down_unselected"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddunderlineColor="@color/view_hui">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dropDownMenu_underLine"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@null"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </com.land.ch.smartnewcountryside.view.DropDownMenu>
+</com.zhy.autolayout.AutoLinearLayout>

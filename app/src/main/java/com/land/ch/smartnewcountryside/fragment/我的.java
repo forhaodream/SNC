@@ -1,6 +1,5 @@
 package com.land.ch.smartnewcountryside.fragment;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,12 +14,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.land.ch.smartnewcountryside.R;
-import com.land.ch.smartnewcountryside.activity.HomeActivity;
 import com.land.ch.smartnewcountryside.adapter.MineTypeAdapter;
 import com.land.ch.smartnewcountryside.bean.MineTypeBean;
 import com.land.ch.smartnewcountryside.view.VSSView;
 import com.land.ch.smartnewcountryside.完善名片信息.完善个人信息;
-import com.land.ch.smartnewcountryside.我的.全城热恋;
+import com.land.ch.smartnewcountryside.全城热恋.全城热恋;
 import com.land.ch.smartnewcountryside.我的.图片看病;
 import com.land.ch.smartnewcountryside.我的.我的余额;
 import com.land.ch.smartnewcountryside.我的.我的动态;

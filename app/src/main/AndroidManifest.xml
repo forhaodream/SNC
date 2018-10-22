@@ -51,7 +51,10 @@
             android:name=".我的.我的特权"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".我的.全城热恋"
+            android:name=".全城热恋.全城热恋"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".全城热恋.全网热恋发布"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".我的.图片看病"
@@ -74,6 +77,10 @@
         <activity
             android:name=".我的.我的村庄"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.我的图片看病"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".完善名片信息.完善个人信息"
             android:screenOrientation="portrait"/>

@@ -23,20 +23,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="图片看病"
+            android:text="我的图片看病"
             android:textColor="@color/text_grays"
             android:textSize="14sp"/>
 
-        <TextView
-            android:id="@+id/layout_title_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="30px"
-            android:text="陈"
-            android:textColor="@color/text_grays"
-            android:textSize="14sp"/>
+
     </com.zhy.autolayout.AutoRelativeLayout>
 
     <android.support.v7.widget.RecyclerView

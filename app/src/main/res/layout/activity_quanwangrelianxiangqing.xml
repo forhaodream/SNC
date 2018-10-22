@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title_rlc"
+        android:layout_marginBottom="300px">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/展示img"
+                android:layout_width="match_parent"
+                android:layout_height="800px"
+                android:src="@color/color_9"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/姓名tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:text="谷歌"/>
+
+                    <TextView
+                        android:id="@+id/手机号tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:text="谷歌"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/年龄tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:text="年龄"/>
+
+                    <TextView
+                        android:id="@+id/现居地tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:text="现居地"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/性别tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:text="性别"/>
+
+                    <TextView
+                        android:id="@+id/爱好tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:text="爱好"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12px"
+                android:background="@color/view_hui"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:text="简介:"/>
+
+                <TextView
+                    android:id="@+id/简介tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:text="简介:"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12px"
+                android:background="@color/view_hui"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_img_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:layout_weight="1"
+                    android:src="@color/color_9"/>
+
+                <ImageView
+                    android:id="@+id/detail_img_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:layout_weight="1"
+                    android:src="@color/color_9"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="18px"
+                android:background="@color/view_hui"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/关注一波btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_9"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:text="关注一波"/>
+
+        <Button
+            android:id="@+id/聊一聊btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_9"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:text="聊一聊"/>
+
+        <Button
+            android:id="@+id/人气btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_9"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:text="人气   1"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

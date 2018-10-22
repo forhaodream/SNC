@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/layout_title_rlc"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/layout_title_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/layout_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全网热恋"
+            android:textColor="@color/text_grays"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/确认tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="确认"
+            android:textColor="@color/text_grays"
+            android:textSize="14sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:text="照片"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:id="@+id/头像img"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="30px"
+                    android:src="@mipmap/touxiang"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/姓名VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入姓名"
+                app:editText_title="姓名"
+                app:view_type="edit"/>
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/性别VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入性别"
+                app:editText_title="性别"
+                app:view_type="edit"/>
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/年龄VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入年龄"
+                app:editText_title="年龄"
+                app:view_type="edit"/>
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/兴趣爱好VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入兴趣爱好"
+                app:editText_title="兴趣爱好"
+                app:view_type="edit"/>
+
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/工作VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入工作"
+                app:editText_title="工作"
+                app:view_type="edit"/>
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/现居VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入现居"
+                app:editText_title="现居"
+                app:view_type="edit"/>
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/婚史VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入婚史"
+                app:editText_title="婚史"
+                app:view_type="edit"/>
+
+            <com.land.ch.smartnewcountryside.view.VSSView
+                android:id="@+id/恋爱要求VSSView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:editText_hint="请输入恋爱要求"
+                app:editText_title="恋爱要求"
+                app:view_type="edit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:text="个人简介"/>
+
+            <EditText
+                android:id="@+id/个人简介ed"
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:layout_margin="20px"
+                android:background="@drawable/gray_shape"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:text="个人秀"/>
+
+            <ImageView
+                android:id="@+id/个人秀img"
+                android:layout_width="match_parent"
+                android:layout_height="200px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>
