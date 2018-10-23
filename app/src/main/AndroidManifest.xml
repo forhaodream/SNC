@@ -60,9 +60,6 @@
             android:name=".我的.图片看病"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".我的.招聘信息"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".我的.我的动态"
             android:screenOrientation="portrait"/>
         <activity

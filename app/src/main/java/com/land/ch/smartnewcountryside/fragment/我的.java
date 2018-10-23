@@ -92,7 +92,6 @@ public class 我的 extends Fragment implements View.OnClickListener {
         mView = inflater.inflate(R.layout.fragment_mine, null);
         initView(mView);
         initData();
-
         return mView;
     }
 
@@ -182,7 +181,6 @@ public class 我的 extends Fragment implements View.OnClickListener {
             map.put("name", names[i]);
             map.put("img", imgs[i]);
             mList.add(map);
-
         }
         mMineTypeAdapter = new MineTypeAdapter(getActivity(), mList);
         我的分类标签.setAdapter(mMineTypeAdapter);

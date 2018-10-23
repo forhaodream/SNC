@@ -11,6 +11,22 @@ public class HomeTypeBean {
 
     private String title;
     private int img;
+    private Class<?> clz;
+
+    public HomeTypeBean(String title, int img, Class<?> clz) {
+        this.title = title;
+        this.img = img;
+        this.clz = clz;
+    }
+
+    public Class<?> getClz() {
+
+        return clz;
+    }
+
+    public void setClz(Class<?> clz) {
+        this.clz = clz;
+    }
 
     public String getTitle() {
         return title;

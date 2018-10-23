@@ -79,7 +79,5 @@ public class MineTypeAdapter extends BaseAdapter {
     class ViewHolder {
         TextView titleTv;
         ImageView mImageView;
-
-
     }
 }

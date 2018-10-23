@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/item_mine_type_img"
-        android:layout_width="70px"
-        android:layout_height="70px"
+        android:layout_width="90px"
+        android:layout_height="90px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30px"/>
 
