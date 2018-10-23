@@ -87,7 +87,13 @@
         <activity
             android:name=".我的.设置"
             android:screenOrientation="portrait"/>
-        <activity android:name=".我的.收货地址"/>
+        <activity
+            android:name=".我的.收货地址"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".讲农堂.讲农堂详细"/>
     </application>
 
 </manifest>

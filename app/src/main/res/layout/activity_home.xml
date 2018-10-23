@@ -57,8 +57,8 @@
 
                         <ImageView
                             android:id="@+id/home_image"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:background="@mipmap/home_lv"/>
 
                         <TextView
@@ -81,10 +81,10 @@
 
                         <ImageView
                             android:id="@+id/car_image"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_centerHorizontal="true"
-                            android:background="@mipmap/car_hui"/>
+                            android:background="@mipmap/ncp_hui"/>
 
                         <TextView
                             android:id="@+id/car_text"
@@ -92,7 +92,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="2dp"
-                            android:text="物流叫车"
+                            android:text="农产品"
                             android:textColor="@android:color/black"
                             android:textSize="11sp"/>
 
@@ -109,17 +109,17 @@
 
                         <ImageView
                             android:id="@+id/countryside_image"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_centerHorizontal="true"
-                            android:background="@mipmap/countryside_hui"/>
+                            android:background="@mipmap/zb_hui"/>
 
                         <TextView
                             android:id="@+id/countryside_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:text="优选乡村"
+                            android:text="直播"
                             android:textColor="@android:color/black"
                             android:textSize="11sp"/>
 
@@ -137,8 +137,8 @@
 
                         <ImageView
                             android:id="@+id/chat_image"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_centerHorizontal="true"
                             android:background="@mipmap/chat_hui"/>
 
@@ -163,8 +163,8 @@
 
                         <ImageView
                             android:id="@+id/mine_image"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_centerHorizontal="true"
                             android:background="@mipmap/mine_hui"/>
 

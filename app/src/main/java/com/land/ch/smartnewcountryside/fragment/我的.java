@@ -14,11 +14,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.land.ch.smartnewcountryside.R;
+import com.land.ch.smartnewcountryside.activity.WebViewActivity;
 import com.land.ch.smartnewcountryside.adapter.MineTypeAdapter;
 import com.land.ch.smartnewcountryside.bean.MineTypeBean;
 import com.land.ch.smartnewcountryside.view.VSSView;
 import com.land.ch.smartnewcountryside.完善名片信息.完善个人信息;
 import com.land.ch.smartnewcountryside.全城热恋.全城热恋;
+import com.land.ch.smartnewcountryside.帮助中心.意见反馈;
 import com.land.ch.smartnewcountryside.我的.图片看病;
 import com.land.ch.smartnewcountryside.我的.我的余额;
 import com.land.ch.smartnewcountryside.我的.我的动态;
@@ -75,7 +77,7 @@ public class 我的 extends Fragment implements View.OnClickListener {
     private AutoLinearLayout 退款;
     private MyGridView 我的分类标签;
     private AutoLinearLayout 常见问题;
-    private AutoLinearLayout 意见反馈;
+    private AutoLinearLayout 意见反馈ll;
     private AutoLinearLayout 关于我们;
     private AutoLinearLayout 客服电话;
     private Button 设置btn;
@@ -88,7 +90,6 @@ public class 我的 extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_mine, null);
-
         initView(mView);
         initData();
 
@@ -103,14 +104,14 @@ public class 我的 extends Fragment implements View.OnClickListener {
                 intentAty(完善个人信息.class);
             }
         });
-        名字 =  mView.findViewById(R.id.名字);
+        名字 = mView.findViewById(R.id.名字);
         名字.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 intentAty(完善个人信息.class);
             }
         });
-        手机号 =  mView.findViewById(R.id.手机号);
+        手机号 = mView.findViewById(R.id.手机号);
         手机号.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -139,30 +140,30 @@ public class 我的 extends Fragment implements View.OnClickListener {
             }
         });
         imgSix = (ImageView) mView.findViewById(R.id.img_six);
-        tvSix =  mView.findViewById(R.id.tv_six);
+        tvSix = mView.findViewById(R.id.tv_six);
         待付款 = (AutoLinearLayout) mView.findViewById(R.id.待付款);
         待付款.setOnClickListener(this);
         imgSeven = (ImageView) mView.findViewById(R.id.img_seven);
-        tvSeven =  mView.findViewById(R.id.tv_seven);
+        tvSeven = mView.findViewById(R.id.tv_seven);
         待发货 = (AutoLinearLayout) mView.findViewById(R.id.待发货);
         待发货.setOnClickListener(this);
         imgEight = (ImageView) mView.findViewById(R.id.img_eight);
-        tvEight =  mView.findViewById(R.id.tv_eight);
+        tvEight = mView.findViewById(R.id.tv_eight);
         待收货 = (AutoLinearLayout) mView.findViewById(R.id.待收货);
         待收货.setOnClickListener(this);
         imgNine = (ImageView) mView.findViewById(R.id.img_nine);
-        tvNine =  mView.findViewById(R.id.tv_nine);
+        tvNine = mView.findViewById(R.id.tv_nine);
         待评价 = (AutoLinearLayout) mView.findViewById(R.id.待评价);
         待评价.setOnClickListener(this);
         imgTen = (ImageView) mView.findViewById(R.id.img_ten);
-        tvTen =  mView.findViewById(R.id.tv_ten);
+        tvTen = mView.findViewById(R.id.tv_ten);
         退款 = (AutoLinearLayout) mView.findViewById(R.id.退款);
         退款.setOnClickListener(this);
         我的分类标签 = (MyGridView) mView.findViewById(R.id.我的分类标签);
         常见问题 = (AutoLinearLayout) mView.findViewById(R.id.常见问题);
         常见问题.setOnClickListener(this);
-        意见反馈 = (AutoLinearLayout) mView.findViewById(R.id.意见反馈);
-        意见反馈.setOnClickListener(this);
+        意见反馈ll = (AutoLinearLayout) mView.findViewById(R.id.意见反馈ll);
+        意见反馈ll.setOnClickListener(this);
         关于我们 = (AutoLinearLayout) mView.findViewById(R.id.关于我们);
         关于我们.setOnClickListener(this);
         客服电话 = (AutoLinearLayout) mView.findViewById(R.id.客服电话);
@@ -273,10 +274,19 @@ public class 我的 extends Fragment implements View.OnClickListener {
             case R.id.我的分类标签:
                 break;
             case R.id.常见问题:
+                Intent 常见问题intent = new Intent(getActivity(), WebViewActivity.class);
+                常见问题intent.putExtra("titleStr", "常见问题");
+                常见问题intent.putExtra("webUrl", "");
+                startActivity(常见问题intent);
                 break;
-            case R.id.意见反馈:
+            case R.id.意见反馈ll:
+                intentAty(意见反馈.class);
                 break;
             case R.id.关于我们:
+                Intent 关于我们i = new Intent(getActivity(), WebViewActivity.class);
+                关于我们i.putExtra("titleStr", "关于我们");
+                关于我们i.putExtra("webUrl", "");
+                startActivity(关于我们i);
                 break;
             case R.id.客服电话:
                 break;

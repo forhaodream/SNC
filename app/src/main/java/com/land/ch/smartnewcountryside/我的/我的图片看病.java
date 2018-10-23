@@ -9,7 +9,6 @@ import com.land.ch.smartnewcountryside.R;
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import ch.chtool.base.BaseActivity;
-import ch.chtool.view.MyGridView;
 
 /**
  * Created by CH
@@ -33,7 +32,6 @@ public class 我的图片看病 extends BaseActivity implements View.OnClickList
         mLayoutTitleBack = (ImageView) findViewById(R.id.layout_title_back);
         mLayoutTitleBack.setOnClickListener(this);
         mLayoutTitleText = (TextView) findViewById(R.id.layout_title_text);
-        mLayoutTitleName.setOnClickListener(this);
         mLayoutTitleRlc = (AutoRelativeLayout) findViewById(R.id.layout_title_rlc);
         recyclerView = findViewById(R.id.recyclerView);
         发布Rlc = findViewById(R.id.发布rlc);

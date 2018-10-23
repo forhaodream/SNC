@@ -119,8 +119,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-
-
     }
 
     @Override
@@ -215,8 +213,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void setLayoutButton0() {
         首页Img.setBackgroundResource(R.mipmap.home_lv);
-        物流叫车Img.setBackgroundResource(R.mipmap.car_hui);
-        优选乡村Img.setBackgroundResource(R.mipmap.countryside_hui);
+        物流叫车Img.setBackgroundResource(R.mipmap.ncp_hui);
+        优选乡村Img.setBackgroundResource(R.mipmap.zb_hui);
         聊一聊Img.setBackgroundResource(R.mipmap.chat_hui);
         我的Img.setBackgroundResource(R.mipmap.mine_hui);
         首页Tv.setTextColor(this.getResources().getColor(R.color.home_text_lv));
@@ -228,8 +226,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void setLayoutButton1() {
         首页Img.setBackgroundResource(R.mipmap.home_hui);
-        物流叫车Img.setBackgroundResource(R.mipmap.car_lv);
-        优选乡村Img.setBackgroundResource(R.mipmap.countryside_hui);
+        物流叫车Img.setBackgroundResource(R.mipmap.ncp_lv);
+        优选乡村Img.setBackgroundResource(R.mipmap.zb_hui);
         聊一聊Img.setBackgroundResource(R.mipmap.chat_hui);
         我的Img.setBackgroundResource(R.mipmap.mine_hui);
         首页Tv.setTextColor(this.getResources().getColor(R.color.home_text_hui));
@@ -241,8 +239,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void setLayoutButton2() {
         首页Img.setBackgroundResource(R.mipmap.home_hui);
-        物流叫车Img.setBackgroundResource(R.mipmap.car_hui);
-        优选乡村Img.setBackgroundResource(R.mipmap.countryside_lv);
+        物流叫车Img.setBackgroundResource(R.mipmap.ncp_hui);
+        优选乡村Img.setBackgroundResource(R.mipmap.zb_lv);
         聊一聊Img.setBackgroundResource(R.mipmap.chat_hui);
         我的Img.setBackgroundResource(R.mipmap.mine_hui);
         首页Tv.setTextColor(this.getResources().getColor(R.color.home_text_hui));
@@ -254,8 +252,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void setlayoutbutton3() {
         首页Img.setBackgroundResource(R.mipmap.home_hui);
-        物流叫车Img.setBackgroundResource(R.mipmap.car_hui);
-        优选乡村Img.setBackgroundResource(R.mipmap.countryside_hui);
+        物流叫车Img.setBackgroundResource(R.mipmap.ncp_hui);
+        优选乡村Img.setBackgroundResource(R.mipmap.zb_hui);
         聊一聊Img.setBackgroundResource(R.mipmap.chat_lv);
         我的Img.setBackgroundResource(R.mipmap.mine_hui);
         首页Tv.setTextColor(this.getResources().getColor(R.color.home_text_hui));
@@ -267,8 +265,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void setlayoutbutton4() {
         首页Img.setBackgroundResource(R.mipmap.home_hui);
-        物流叫车Img.setBackgroundResource(R.mipmap.car_hui);
-        优选乡村Img.setBackgroundResource(R.mipmap.countryside_hui);
+        物流叫车Img.setBackgroundResource(R.mipmap.ncp_hui);
+        优选乡村Img.setBackgroundResource(R.mipmap.zb_hui);
         聊一聊Img.setBackgroundResource(R.mipmap.chat_hui);
         我的Img.setBackgroundResource(R.mipmap.mine_lv);
         首页Tv.setTextColor(this.getResources().getColor(R.color.home_text_hui));
