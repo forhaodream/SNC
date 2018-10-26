@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/white"
+                                     android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="750px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/shidirenzheng"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@color/view_hui"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:text="姓名"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/gray_shape"
+            android:hint="在这里填写姓名"
+            android:paddingLeft="40px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:text="身份证号"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/ed_idcard"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/gray_shape"
+            android:hint="在这里填写 18 位身份证号码"
+            android:paddingLeft="40px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:text="*请确保姓名、身份证号码与本人身份证信息一致"/>
+
+        <Button
+            android:id="@+id/开始认证btn"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_margin="50px"
+            android:background="@color/gray"
+            android:text="开始认证"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

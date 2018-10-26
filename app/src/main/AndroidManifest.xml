@@ -88,9 +88,29 @@
             android:name=".我的.收货地址"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".我的认证.实人认证"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的认证.企业认证"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的认证.农资资质"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的认证.实地认证"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的认证.采购认证"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.全部品类"
+            android:screenOrientation="portrait"/>
+
+        <activity
             android:name=".activity.WebViewActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".讲农堂.讲农堂详细"/>
+        <activity android:name=".农产品.西瓜"/>
     </application>
 
 </manifest>

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.land.ch.chtools2.base.BaseActivity;
 import com.land.ch.smartnewcountryside.R;
 
 /**

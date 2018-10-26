@@ -20,6 +20,7 @@ import com.land.ch.smartnewcountryside.utils.RecyclerAdapter;
 import com.land.ch.smartnewcountryside.utils.RecyclerViewHolder;
 import com.land.ch.smartnewcountryside.view.AutoSwitchView;
 import com.land.ch.smartnewcountryside.招聘信息.招聘信息;
+import com.land.ch.smartnewcountryside.首页.全部品类;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
 
@@ -73,8 +74,11 @@ public class 首页 extends Fragment {
             , HomeActivity.class, HomeActivity.class, HomeActivity.class, HomeActivity.class, 招聘信息.class
     };
     private int typeLvImg[] = {R.mipmap.sczm, R.mipmap.fl, R.mipmap.nyjx,
-            R.mipmap.wsdp, R.mipmap.bh, R.mipmap.tdlz, R.mipmap.tdlz, R.mipmap.zz, R.mipmap.ny, R.mipmap.qbpl};
-
+            R.mipmap.wsdp, R.mipmap.bh, R.mipmap.sl, R.mipmap.tdlz, R.mipmap.zz, R.mipmap.ny, R.mipmap.qbpl};
+    private String typelvTitle[] = {"种苗", "肥料", "农业机械", "大棚设备", "农业备货"
+            , "土地流转", "饲料", "种子", "农药", "全部品类"};
+    private Class clzlvList[] = {全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class
+            , 全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class};
 
     @Nullable
     @Override
@@ -140,10 +144,10 @@ public class 首页 extends Fragment {
         彩色分类.setAdapter(recycleAdapter);
 
         GridLayoutManager gridLayoutManager1 = new GridLayoutManager(getActivity(), 5);
-        绿色分类.setLayoutManager(gridLayoutManager);
+        绿色分类.setLayoutManager(gridLayoutManager1);
         mHomeTypes = new ArrayList<>();
-        for (int i = 0; i < typeImg.length; i++) {
-            mHomeTypes.add(new HomeTypeBean(typeTitle[i], typeImg[i], clzList[i]));
+        for (int i = 0; i < typelvTitle.length; i++) {
+            mHomeTypes.add(new HomeTypeBean(typelvTitle[i], typeLvImg[i], clzlvList[i]));
         }
         RecyclerAdapter recycleAdapter1 = new RecyclerAdapter<HomeTypeBean>(getActivity(), R.layout.item_home_type, mHomeTypes) {
             @Override

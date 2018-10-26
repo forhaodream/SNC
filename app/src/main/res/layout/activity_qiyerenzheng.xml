@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/as_color"
+                                     android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1300px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/qiyerenzheng"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/快速认证tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="如何快速完成认证?"/>
+
+        <Button
+            android:id="@+id/开始认证btn"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_margin="30px"
+            android:background="@color/theme_green"
+            android:text="开始认证"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/企业认证协议tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="点击即表示同意《智慧新农村企业认证协议》"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

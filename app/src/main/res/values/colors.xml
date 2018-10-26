@@ -37,7 +37,7 @@
     <color name="red">#ee0101</color>
     <color name="dark_blue">#266eaf</color>
 
-
+    <color name="bg_color">#F1F1F1</color>
     <color name="color_5">#ff5c01</color>
     <color name="color_9">#ff0068</color>
     <color name="color_23">#5abf3d</color>
@@ -47,5 +47,5 @@
     <color name="line_default_color">#B3DD9B</color>
     <color name="theme_green">#267a3a</color>
 
-
+    <color name="as_color">#efefef</color>
 </resources>

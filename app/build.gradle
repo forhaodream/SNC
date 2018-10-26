@@ -31,6 +31,6 @@ dependencies {
     implementation 'com.nex3z:flow-layout:1.2.2'
 
     // 类库
-    implementation 'com.github.forhaodream:ch:1.1.2'
+    implementation 'com.github.forhaodream.ch:chtool:0.0.1'
     //implementation 'com.github.Liquor6:liquor:1.0.4'
 }

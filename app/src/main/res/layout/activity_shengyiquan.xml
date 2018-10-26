@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <ImageView
+            android:id="@+id/home_address_tv"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/back"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/搜索rlc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="170px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@id/home_address_tv"
+            android:background="@drawable/draw_home_search_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="12px"
+                android:text="搜索"
+                android:textColor="@color/home_search_text_hui"
+                android:textSize="12sp"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ImageView
+            android:id="@+id/浏览记录img"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/liulanjilu"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/text_orange"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_orange"
+        app:tabTextColor="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="1px"
+        android:background="@color/text_grays"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"/>
+</com.zhy.autolayout.AutoRelativeLayout>

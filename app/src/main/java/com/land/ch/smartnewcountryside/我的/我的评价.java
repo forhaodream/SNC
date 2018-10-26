@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
-import com.land.ch.smartnewcountryside.我的认证.待评价;
+import com.land.ch.smartnewcountryside.我的订单.待评价;
 import com.land.ch.smartnewcountryside.我的评价.已评价;
 
 import java.util.ArrayList;

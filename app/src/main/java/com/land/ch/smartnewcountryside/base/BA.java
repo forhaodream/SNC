@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import ch.chtool.base.TitleLayout;
 
 /**
  * Created by CH
@@ -25,7 +24,7 @@ public abstract class BA extends Activity {
     // log
     private static Log log;
 
-    private TitleLayout titleLayout = null;
+//    private TitleLayout titleLayout = null;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

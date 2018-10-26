@@ -15,11 +15,11 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
-import com.land.ch.smartnewcountryside.我的认证.全部;
-import com.land.ch.smartnewcountryside.我的认证.已发货;
-import com.land.ch.smartnewcountryside.我的认证.待发货;
-import com.land.ch.smartnewcountryside.我的认证.待确认;
-import com.land.ch.smartnewcountryside.我的认证.待评价;
+import com.land.ch.smartnewcountryside.我的订单.全部;
+import com.land.ch.smartnewcountryside.我的订单.已发货;
+import com.land.ch.smartnewcountryside.我的订单.待发货;
+import com.land.ch.smartnewcountryside.我的订单.待确认;
+import com.land.ch.smartnewcountryside.我的订单.待评价;
 
 import java.util.ArrayList;
 import java.util.List;
