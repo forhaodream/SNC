@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.land.ch.smartnewcountryside.R;
 import com.land.ch.smartnewcountryside.activity.HomeActivity;
+import com.land.ch.smartnewcountryside.activity.WebViewActivity;
 import com.land.ch.smartnewcountryside.bean.HomeTypeBean;
 import com.land.ch.smartnewcountryside.utils.RecyclerAdapter;
 import com.land.ch.smartnewcountryside.utils.RecyclerViewHolder;
@@ -33,7 +34,7 @@ import ch.chtool.view.MyGridView;
  * Created by CH
  * on 2018/10/15 15:04
  */
-public class 首页 extends Fragment {
+public class 首页 extends Fragment implements View.OnClickListener {
     private View mView;
     /**
      * 沈阳市
@@ -79,6 +80,31 @@ public class 首页 extends Fragment {
             , "土地流转", "饲料", "种子", "农药", "全部品类"};
     private Class clzlvList[] = {全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class
             , 全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class, 全部品类.class};
+    private View view;
+    /**
+     * 沈阳市
+     */
+    private TextView mHomeAddressTv;
+    private AutoRelativeLayout mHomeSearchRl;
+    private ImageView m首页浏览记录;
+    private AutoSwitchView mFragmentHomeBanner;
+    private RecyclerView m彩色分类;
+    private RecyclerView m绿色分类;
+    private ImageView m首页广告一;
+    private ImageView m首页广告二;
+    private ImageView m发采购;
+    private ImageView m生意圈;
+    private ImageView m图片看病;
+    private ImageView m全国行情;
+    private ImageView m优选基地;
+    private ImageView m视频直播;
+    private ImageView m代养代种;
+    private ImageView m首页广告三;
+    private MyGridView m优选农村;
+    private ImageView m优质供应商;
+    private ImageView m名优特产;
+    private ImageView m首页广告四;
+    private RecyclerView m首页商品展示;
 
     @Nullable
     @Override
@@ -96,21 +122,49 @@ public class 首页 extends Fragment {
         fragmentHomeBanner = (AutoSwitchView) mView.findViewById(R.id.fragment_home_banner);
         彩色分类 = mView.findViewById(R.id.彩色分类);
         绿色分类 = mView.findViewById(R.id.绿色分类);
-        首页广告一 = (ImageView) mView.findViewById(R.id.首页广告一);
-        首页广告二 = (ImageView) mView.findViewById(R.id.首页广告二);
-        发采购 = (ImageView) mView.findViewById(R.id.发采购);
-        生意圈 = (ImageView) mView.findViewById(R.id.生意圈);
-        图片看病 = (ImageView) mView.findViewById(R.id.图片看病);
-        全国行情 = (ImageView) mView.findViewById(R.id.全国行情);
-        优选基地 = (ImageView) mView.findViewById(R.id.优选基地);
-        视频直播 = (ImageView) mView.findViewById(R.id.视频直播);
-        代养代种 = (ImageView) mView.findViewById(R.id.代养代种);
-        首页广告三 = (ImageView) mView.findViewById(R.id.首页广告三);
-        优选农村 = (MyGridView) mView.findViewById(R.id.优选农村);
-        优质供应商 = (ImageView) mView.findViewById(R.id.优质供应商);
-        名优特产 = (ImageView) mView.findViewById(R.id.名优特产);
-        首页广告四 = (ImageView) mView.findViewById(R.id.首页广告四);
-        首页商品展示 = (RecyclerView) mView.findViewById(R.id.首页商品展示);
+
+        mHomeAddressTv = (TextView) mView.findViewById(R.id.home_address_tv);
+        mHomeAddressTv.setOnClickListener(this);
+        mHomeSearchRl = (AutoRelativeLayout) mView.findViewById(R.id.home_search_rl);
+        mHomeSearchRl.setOnClickListener(this);
+        m首页浏览记录 = (ImageView) mView.findViewById(R.id.首页浏览记录);
+        m首页浏览记录.setOnClickListener(this);
+        mFragmentHomeBanner = (AutoSwitchView) mView.findViewById(R.id.fragment_home_banner);
+        mFragmentHomeBanner.setOnClickListener(this);
+        m彩色分类 = (RecyclerView) mView.findViewById(R.id.彩色分类);
+        m彩色分类.setOnClickListener(this);
+        m绿色分类 = (RecyclerView) mView.findViewById(R.id.绿色分类);
+        m绿色分类.setOnClickListener(this);
+        m首页广告一 = (ImageView) mView.findViewById(R.id.首页广告一);
+        m首页广告一.setOnClickListener(this);
+        m首页广告二 = (ImageView) mView.findViewById(R.id.首页广告二);
+        m首页广告二.setOnClickListener(this);
+        m发采购 = (ImageView) mView.findViewById(R.id.发采购);
+        m发采购.setOnClickListener(this);
+        m生意圈 = (ImageView) mView.findViewById(R.id.生意圈);
+        m生意圈.setOnClickListener(this);
+        m图片看病 = (ImageView) mView.findViewById(R.id.图片看病);
+        m图片看病.setOnClickListener(this);
+        m全国行情 = (ImageView) mView.findViewById(R.id.全国行情);
+        m全国行情.setOnClickListener(this);
+        m优选基地 = (ImageView) mView.findViewById(R.id.优选基地);
+        m优选基地.setOnClickListener(this);
+        m视频直播 = (ImageView) mView.findViewById(R.id.视频直播);
+        m视频直播.setOnClickListener(this);
+        m代养代种 = (ImageView) mView.findViewById(R.id.代养代种);
+        m代养代种.setOnClickListener(this);
+        m首页广告三 = (ImageView) mView.findViewById(R.id.首页广告三);
+        m首页广告三.setOnClickListener(this);
+        m优选农村 = (MyGridView) mView.findViewById(R.id.优选农村);
+        m优选农村.setOnClickListener(this);
+        m优质供应商 = (ImageView) mView.findViewById(R.id.优质供应商);
+        m优质供应商.setOnClickListener(this);
+        m名优特产 = (ImageView) mView.findViewById(R.id.名优特产);
+        m名优特产.setOnClickListener(this);
+        m首页广告四 = (ImageView) mView.findViewById(R.id.首页广告四);
+        m首页广告四.setOnClickListener(this);
+        m首页商品展示 = (RecyclerView) mView.findViewById(R.id.首页商品展示);
+        m首页商品展示.setOnClickListener(this);
     }
 
     private void initData() {
@@ -167,5 +221,59 @@ public class 首页 extends Fragment {
         };
         绿色分类.setAdapter(recycleAdapter1);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            default:
+                break;
+            case R.id.home_address_tv:
+                break;
+            case R.id.home_search_rl:
+                break;
+            case R.id.首页浏览记录:
+                break;
+            case R.id.fragment_home_banner:
+                break;
+            case R.id.彩色分类:
+                break;
+            case R.id.绿色分类:
+                break;
+            case R.id.首页广告一:
+                break;
+            case R.id.首页广告二:
+                Intent intent2 = new Intent(getActivity(), WebViewActivity.class);
+                intent2.putExtra("titleStr", "产地产品馆");
+                intent2.putExtra("webUrl", "");
+                startActivity(intent2);
+                break;
+            case R.id.发采购:
+                break;
+            case R.id.生意圈:
+                break;
+            case R.id.图片看病:
+                break;
+            case R.id.全国行情:
+                break;
+            case R.id.优选基地:
+                break;
+            case R.id.视频直播:
+                break;
+            case R.id.代养代种:
+                break;
+            case R.id.首页广告三:
+                break;
+            case R.id.优选农村:
+                break;
+            case R.id.优质供应商:
+                break;
+            case R.id.名优特产:
+                break;
+            case R.id.首页广告四:
+                break;
+            case R.id.首页商品展示:
+                break;
+        }
     }
 }
