@@ -1,4 +1,4 @@
-package com.land.ch.smartnewcountryside.生意圈;
+package com.land.ch.smartnewcountryside.物流叫车;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,17 +15,17 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
-import com.land.ch.smartnewcountryside.物流叫车.货源大厅;
-import com.land.ch.smartnewcountryside.物流叫车.附近车源;
+import com.land.ch.smartnewcountryside.我的特权.已购特权;
+import com.land.ch.smartnewcountryside.我的特权.购买记录;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by CH
- * on 2018/10/26 13:38
+ * on 2018/10/15 15:04
  */
-public class 生意圈 extends AppCompatActivity {
+public class 物流叫车 extends AppCompatActivity {
     private ImageView returnImg;
     private TabLayout tab;
     private ViewPager pager;
@@ -91,3 +91,4 @@ public class 生意圈 extends AppCompatActivity {
         }
     }
 }
+

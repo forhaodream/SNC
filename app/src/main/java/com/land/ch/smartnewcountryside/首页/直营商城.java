@@ -1,4 +1,4 @@
-package com.land.ch.smartnewcountryside.生意圈;
+package com.land.ch.smartnewcountryside.首页;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,19 +13,20 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.land.ch.smartnewcountryside.R;
+import com.land.ch.smartnewcountryside.我的特权.购买记录;
 import com.land.ch.smartnewcountryside.物流叫车.货源大厅;
-import com.land.ch.smartnewcountryside.物流叫车.附近车源;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by CH
- * on 2018/10/26 13:38
+ * on 2018/10/29 13:08
  */
-public class 生意圈 extends AppCompatActivity {
+public class 直营商城 extends AppCompatActivity {
     private ImageView returnImg;
     private TabLayout tab;
     private ViewPager pager;
@@ -33,24 +34,30 @@ public class 生意圈 extends AppCompatActivity {
     private Handler mHandler;
     private String[] titles;
     private MyAdapter adapter;
-
+    private TextView titleTv;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wuliujiaoche);
+        setContentView(R.layout.activity_zhiyingshangcheng);
         initData();
     }
 
     public void initData() {
+        titleTv = findViewById(R.id.layout_title_text);
+        titleTv.setText("直营商城");
         mFragmentList = new ArrayList<>();
-        titles = new String[]{"货源大厅", "附近车源"};
+        titles = new String[]{"已购特权", "购买记录", "购买记录", "购买记录", "购买记录", "购买记录"};
         //页面，数据源
         mFragmentList.add(new 货源大厅());
-        mFragmentList.add(new 附近车源());
+        mFragmentList.add(new 购买记录());
+        mFragmentList.add(new 货源大厅());
+        mFragmentList.add(new 购买记录());
+        mFragmentList.add(new 货源大厅());
+        mFragmentList.add(new 购买记录());
         Intent intent = new Intent("android.intent.action.CART_BROADCAST");
         intent.putExtra("data", "refresh");
-        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
+        LocalBroadcastManager.getInstance(直营商城.this).sendBroadcast(intent);
         sendBroadcast(intent);
         pager = findViewById(R.id.viewPager);
         tab = findViewById(R.id.tabLayout);
@@ -91,3 +98,4 @@ public class 生意圈 extends AppCompatActivity {
         }
     }
 }
+

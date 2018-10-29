@@ -1,4 +1,4 @@
-package com.land.ch.smartnewcountryside.农产品;
+package com.land.ch.smartnewcountryside.首页;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,7 +12,7 @@ import ch.chtool.base.BaseActivity;
 
 /**
  * Created by CH
- * on 2018/10/16 16:26
+ * on 2018/10/29 13:29
  */
 public class 农产品 extends BaseActivity implements View.OnClickListener {
 
@@ -24,16 +24,18 @@ public class 农产品 extends BaseActivity implements View.OnClickListener {
     private ImageView m广告img;
     private RecyclerView mRecyclerview2;
     private RecyclerView mDetailRecycler;
+    private View mView;
+
 
     @Override
     public int initLayout() {
-        return R.layout.activity_nongchanpin;
+        return R.layout.fragment_nongchanpin;
     }
 
     @Override
     public void initView() {
-
         mHomeAddressTv = (ImageView) findViewById(R.id.home_address_tv);
+        mHomeAddressTv.setVisibility(View.INVISIBLE);
         m搜索rlc = (AutoRelativeLayout) findViewById(R.id.搜索rlc);
         m搜索rlc.setOnClickListener(this);
         m浏览记录img = (ImageView) findViewById(R.id.浏览记录img);
@@ -50,7 +52,6 @@ public class 农产品 extends BaseActivity implements View.OnClickListener {
     public void initData() {
 
     }
-
 
     @Override
     public void onClick(View v) {

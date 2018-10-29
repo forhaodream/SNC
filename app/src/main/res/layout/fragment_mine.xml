@@ -43,8 +43,8 @@
 
                 <ImageView
                     android:id="@+id/头像"
-                    android:layout_width="70px"
-                    android:layout_height="70px"
+                    android:layout_width="130px"
+                    android:layout_height="130px"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="30px"
                     android:src="@mipmap/touxiang"/>
@@ -78,7 +78,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="30px"
-                    android:src="@mipmap/you"/>
+                    android:src="@mipmap/back_right"/>
 
                 <ImageView
                     android:layout_width="60px"

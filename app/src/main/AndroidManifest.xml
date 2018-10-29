@@ -77,12 +77,14 @@
         <activity
             android:name=".我的.我的图片看病"
             android:screenOrientation="portrait"/>
-
         <activity
             android:name=".完善名片信息.完善个人信息"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".我的.设置"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".物流叫车.物流叫车"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".我的.收货地址"
@@ -105,12 +107,36 @@
         <activity
             android:name=".首页.全部品类"
             android:screenOrientation="portrait"/>
-
+        <activity
+            android:name=".首页.优选乡村"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.农家院"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.直播"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.采摘"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.小视频"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.直营商城"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.土地流转"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".代养代种.代养代种"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.WebViewActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".讲农堂.讲农堂详细"/>
         <activity android:name=".农产品.西瓜"/>
+        <activity android:name=".首页.优质基地"/>
     </application>
 
 </manifest>

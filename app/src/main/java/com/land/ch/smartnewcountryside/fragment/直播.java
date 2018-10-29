@@ -10,19 +10,17 @@ import android.view.ViewGroup;
 
 import com.land.ch.smartnewcountryside.R;
 
-import ch.chtool.base.BaseFragment;
-
 /**
  * Created by CH
- * on 2018/10/15 15:04
+ * on 2018/10/29 13:02
  */
-public class 物流叫车 extends Fragment {
+public class 直播 extends Fragment {
     private View mView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.fragment_call_car, null);
+        mView = inflater.inflate(R.layout.fragment_zhibo, null);
         return mView;
     }
 }

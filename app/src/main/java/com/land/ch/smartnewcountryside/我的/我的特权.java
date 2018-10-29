@@ -35,7 +35,6 @@ public class 我的特权 extends AppCompatActivity {
     private String[] titles;
     private MyAdapter adapter;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

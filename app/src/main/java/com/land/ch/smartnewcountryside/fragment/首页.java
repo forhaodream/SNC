@@ -20,8 +20,17 @@ import com.land.ch.smartnewcountryside.bean.HomeTypeBean;
 import com.land.ch.smartnewcountryside.utils.RecyclerAdapter;
 import com.land.ch.smartnewcountryside.utils.RecyclerViewHolder;
 import com.land.ch.smartnewcountryside.view.AutoSwitchView;
+import com.land.ch.smartnewcountryside.代养代种.代养代种;
+import com.land.ch.smartnewcountryside.全城热恋.全城热恋;
 import com.land.ch.smartnewcountryside.招聘信息.招聘信息;
+import com.land.ch.smartnewcountryside.物流叫车.物流叫车;
+import com.land.ch.smartnewcountryside.首页.优选乡村;
 import com.land.ch.smartnewcountryside.首页.全部品类;
+import com.land.ch.smartnewcountryside.首页.农家院;
+import com.land.ch.smartnewcountryside.首页.土地流转;
+import com.land.ch.smartnewcountryside.首页.小视频;
+import com.land.ch.smartnewcountryside.首页.直营商城;
+import com.land.ch.smartnewcountryside.首页.采摘;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
 
@@ -53,7 +62,7 @@ public class 首页 extends Fragment implements View.OnClickListener {
     private ImageView 全国行情;
     private ImageView 优选基地;
     private ImageView 视频直播;
-    private ImageView 代养代种;
+    private ImageView 代养代种img;
     private ImageView 首页广告三;
     private MyGridView 优选农村;
     private ImageView 优质供应商;
@@ -67,12 +76,12 @@ public class 首页 extends Fragment implements View.OnClickListener {
             R.mipmap.tdlz, R.mipmap.xc, R.mipmap.jt, R.mipmap.wl, R.mipmap.gg
     };
     private String typeTitle[] = {"农产品", "代养代种", "直播", "采摘", "农家院", "优选基地", "直营商城"
-            , "生意圈", "小视频", "全网热恋", "土地流转", "优选乡村", "讲农堂", "物流叫车", "招聘信息"};
+            , "生意圈aaa", "小视频", "全网热恋", "土地流转", "优选乡村", "讲农堂", "物流叫车", "招聘信息"};
 
     private Class clzList[] = {
-            HomeActivity.class, HomeActivity.class, HomeActivity.class, HomeActivity.class, HomeActivity.class
-            , HomeActivity.class, HomeActivity.class, HomeActivity.class, HomeActivity.class, HomeActivity.class
-            , HomeActivity.class, HomeActivity.class, HomeActivity.class, HomeActivity.class, 招聘信息.class
+            农产品.class, 代养代种.class, 直播.class, 采摘.class, 农家院.class,
+            HomeActivity.class, 直营商城.class, HomeActivity.class, 小视频.class, 全城热恋.class,
+            土地流转.class, 优选乡村.class, HomeActivity.class, 物流叫车.class, 招聘信息.class
     };
     private int typeLvImg[] = {R.mipmap.sczm, R.mipmap.fl, R.mipmap.nyjx,
             R.mipmap.wsdp, R.mipmap.bh, R.mipmap.sl, R.mipmap.tdlz, R.mipmap.zz, R.mipmap.ny, R.mipmap.qbpl};
@@ -156,7 +165,6 @@ public class 首页 extends Fragment implements View.OnClickListener {
         m首页广告三 = (ImageView) mView.findViewById(R.id.首页广告三);
         m首页广告三.setOnClickListener(this);
         m优选农村 = (MyGridView) mView.findViewById(R.id.优选农村);
-        m优选农村.setOnClickListener(this);
         m优质供应商 = (ImageView) mView.findViewById(R.id.优质供应商);
         m优质供应商.setOnClickListener(this);
         m名优特产 = (ImageView) mView.findViewById(R.id.名优特产);
@@ -264,8 +272,7 @@ public class 首页 extends Fragment implements View.OnClickListener {
                 break;
             case R.id.首页广告三:
                 break;
-            case R.id.优选农村:
-                break;
+
             case R.id.优质供应商:
                 break;
             case R.id.名优特产:

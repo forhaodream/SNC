@@ -1,4 +1,4 @@
-package com.land.ch.smartnewcountryside.fragment;
+package com.land.ch.smartnewcountryside.首页;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,13 +13,14 @@ import android.widget.ImageView;
 import com.land.ch.smartnewcountryside.R;
 import com.zhy.autolayout.AutoRelativeLayout;
 
+import ch.chtool.base.BaseActivity;
 import ch.chtool.view.MyGridView;
 
 /**
  * Created by CH
  * on 2018/10/15 15:04
  */
-public class 优选乡村 extends Fragment implements View.OnClickListener {
+public class 优选乡村 extends BaseActivity implements View.OnClickListener {
     private View mView;
     private View view;
     private AutoRelativeLayout mHomeSearchRl;
@@ -27,15 +28,22 @@ public class 优选乡村 extends Fragment implements View.OnClickListener {
     private MyGridView m优选乡村分类标签;
     private RecyclerView mRecyclerView;
 
-    @Nullable
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.fragment_countryside, null);
-        initView(mView);
-        return mView;
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.home_search_rl:
+                break;
+        }
     }
 
-    private void initView(View mView) {
+    @Override
+    public int initLayout() {
+        return R.layout.fragment_countryside;
+    }
+
+    @Override
+    public void initView() {
         mHomeSearchRl = (AutoRelativeLayout) mView.findViewById(R.id.home_search_rl);
         mHomeSearchRl.setOnClickListener(this);
         m乡村浏览记录 = (ImageView) mView.findViewById(R.id.乡村浏览记录);
@@ -44,12 +52,7 @@ public class 优选乡村 extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            default:
-                break;
-            case R.id.home_search_rl:
-                break;
-        }
+    public void initData() {
+
     }
 }

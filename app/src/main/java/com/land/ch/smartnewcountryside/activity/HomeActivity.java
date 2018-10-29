@@ -25,9 +25,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.land.ch.smartnewcountryside.R;
-import com.land.ch.smartnewcountryside.fragment.优选乡村;
 import com.land.ch.smartnewcountryside.fragment.我的;
-import com.land.ch.smartnewcountryside.fragment.物流叫车;
+import com.land.ch.smartnewcountryside.fragment.农产品;
+import com.land.ch.smartnewcountryside.fragment.直播;
 import com.land.ch.smartnewcountryside.fragment.聊一聊;
 import com.land.ch.smartnewcountryside.fragment.首页;
 
@@ -45,7 +45,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     //初始化标签数组
     String tabs[] = {"首页", "物流叫车", "优选乡村", "聊一聊", "我的"};
     //初始化界面数组
-    Class cls[] = {首页.class, 物流叫车.class, 优选乡村.class, 聊一聊.class, 我的.class};
+    Class cls[] = {首页.class, 农产品.class, 直播.class, 聊一聊.class, 我的.class};
     private ImageView 首页Img, 物流叫车Img, 优选乡村Img, 聊一聊Img, 我的Img;
     private TextView 首页Tv, 物流叫车Tv, 优选乡村Tv, 聊一聊Tv, 我的Tv;
     private int userId;

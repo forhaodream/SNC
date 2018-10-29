@@ -4,4 +4,7 @@
 
     <string name="comment_text">供应的信息准确, 就会收到采购商的好评\n\n
         评价得分越高, 发布的供应就会排名靠前</string>
+
+
+    <string name="fahuo">发布\n货源</string>
 </resources>
