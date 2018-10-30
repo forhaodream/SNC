@@ -24,7 +24,6 @@ import com.land.ch.smartnewcountryside.帮助中心.意见反馈;
 import com.land.ch.smartnewcountryside.我的.图片看病;
 import com.land.ch.smartnewcountryside.我的.我的余额;
 import com.land.ch.smartnewcountryside.我的.我的动态;
-import com.land.ch.smartnewcountryside.我的.我的招聘;
 import com.land.ch.smartnewcountryside.我的.我的收藏;
 import com.land.ch.smartnewcountryside.我的.我的村庄;
 import com.land.ch.smartnewcountryside.我的.我的特权;
@@ -37,6 +36,7 @@ import com.land.ch.smartnewcountryside.我的.支付安全;
 import com.land.ch.smartnewcountryside.我的.收货地址;
 import com.land.ch.smartnewcountryside.我的.设置;
 import com.land.ch.smartnewcountryside.我的.银行账户;
+import com.land.ch.smartnewcountryside.首页.招聘信息;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
 
@@ -222,7 +222,7 @@ public class 我的 extends Fragment implements View.OnClickListener {
                         intentAty(我的村庄.class);
                         break;
                     case 11:
-                        intentAty(我的招聘.class);
+                        intentAty(招聘信息.class);
                         break;
 
                 }

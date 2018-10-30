@@ -1,4 +1,4 @@
-package com.land.ch.smartnewcountryside.生意圈;
+package com.land.ch.smartnewcountryside.首页;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,17 +15,16 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
-import com.land.ch.smartnewcountryside.物流叫车.货源大厅;
-import com.land.ch.smartnewcountryside.物流叫车.附近车源;
+import com.land.ch.smartnewcountryside.招聘.招聘;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by CH
- * on 2018/10/26 13:38
+ * on 2018/10/23 09:10
  */
-public class 生意圈 extends AppCompatActivity {
+public class 招聘信息 extends AppCompatActivity {
     private ImageView returnImg;
     private TabLayout tab;
     private ViewPager pager;
@@ -34,27 +33,22 @@ public class 生意圈 extends AppCompatActivity {
     private String[] titles;
     private MyAdapter adapter;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wuliujiaoche);
+        setContentView(R.layout.activity_zhaopinxinxi);
         initData();
     }
 
     public void initData() {
         mFragmentList = new ArrayList<>();
-        titles = new String[]{"货源大厅", "附近车源", "附近车源", "附近车源", "附近车源", "附近车源"};
+        titles = new String[]{"招聘", "求职"};
         //页面，数据源
-        mFragmentList.add(new 货源大厅());
-        mFragmentList.add(new 附近车源());
-        mFragmentList.add(new 附近车源());
-        mFragmentList.add(new 附近车源());
-        mFragmentList.add(new 附近车源());
-        mFragmentList.add(new 附近车源());
+        mFragmentList.add(new 招聘());
+        mFragmentList.add(new 招聘());
         Intent intent = new Intent("android.intent.action.CART_BROADCAST");
         intent.putExtra("data", "refresh");
-        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
+        LocalBroadcastManager.getInstance(招聘信息.this).sendBroadcast(intent);
         sendBroadcast(intent);
         pager = findViewById(R.id.viewPager);
         tab = findViewById(R.id.tabLayout);
@@ -95,3 +89,4 @@ public class 生意圈 extends AppCompatActivity {
         }
     }
 }
+

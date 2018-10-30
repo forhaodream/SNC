@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/layout_title_rlc"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/layout_title_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/layout_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_grays"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/发布tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="发布"
+            android:textColor="@color/text_grays"
+            android:textSize="14sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_gray"/>
+
+    <com.example.liquorslib.view.VPhotoView
+        android:id="@+id/岗位展示图vph"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        app:VP_imagePhoto="@mipmap/ncp"
+        app:VP_imagePhotoHeight="70px"
+        app:VP_imagePhotoWidth="70px"
+        app:VP_label="岗位展示图"/>
+
+    <com.example.liquorslib.view.VEditText
+        android:id="@+id/标题vet"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="30px"
+        app:VE_label="标题"
+        app:VE_valueHint="诚招养蜂人"/>
+
+    <com.example.liquorslib.view.VEditText
+        android:id="@+id/经验要求vet"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="30px"
+        app:VE_label="经验要求"
+        app:VE_valueHint="一年以上的养蜂经验"/>
+
+    <com.example.liquorslib.view.VEditText
+        android:id="@+id/薪资待遇vet"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="30px"
+        app:VE_label="薪资待遇"
+        app:VE_valueHint="5000/月"/>
+
+    <com.example.liquorslib.view.VEditText
+        android:id="@+id/工作地址vet"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="30px"
+        app:VE_label="工作地址"
+        app:VE_valueHint="黑山"/>
+
+    <com.example.liquorslib.view.VEditText
+        android:id="@+id/电话vet"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="30px"
+        app:VE_label="电话"
+        app:VE_valueHint="132333333333"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="30px"
+        android:text="说明"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_margin="30px"
+        android:background="@drawable/gray_shape"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

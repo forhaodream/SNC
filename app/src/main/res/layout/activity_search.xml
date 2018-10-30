@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <com.land.ch.smartnewcountryside.view.DropDownMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/as_color"
+            android:orientation="vertical">
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/kind_flowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                app:flChildSpacing="7dp"
+                app:flRowSpacing="8dp"/>
+
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/address_flow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                app:flChildSpacing="7dp"
+                app:flRowSpacing="8dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.land.ch.smartnewcountryside.view.DropDownMenu>
+</com.zhy.autolayout.AutoLinearLayout>

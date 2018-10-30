@@ -1,17 +1,18 @@
-package com.land.ch.smartnewcountryside.我的;
+package com.land.ch.smartnewcountryside.招聘;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 import com.land.ch.smartnewcountryside.R;
 
 import ch.chtool.base.BaseActivity;
 
-/**
- * Created by CH
- * on 2018/10/22 09:46
- */
-public class 我的招聘  extends BaseActivity{
+public class 招聘详情 extends BaseActivity {
+
+
     @Override
     public int initLayout() {
-        return R.layout.activity_tupiankanbing;
+        return R.layout.activity_zhaopinxiangqing;
     }
 
     @Override

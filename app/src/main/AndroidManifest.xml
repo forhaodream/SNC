@@ -19,7 +19,6 @@
             android:value="1920"/>
 
         <activity android:name=".activity.HomeActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -67,9 +66,6 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".我的.我的田币"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".我的.我的招聘"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".我的.我的村庄"
@@ -129,14 +125,37 @@
             android:name=".首页.土地流转"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".首页.优质基地"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.招聘信息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".生意圈.生意圈"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".代养代种.代养代种"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".招聘.发布招聘"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".招聘.发布详情"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.WebViewActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.KindsActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".讲农堂.讲农堂详细"/>
         <activity android:name=".农产品.西瓜"/>
-        <activity android:name=".首页.优质基地"/>
+        <activity android:name=".招聘.招聘详情">
+        </activity>
+        <activity android:name=".首页.名优特产">
+        </activity>
+        <activity android:name=".搜索.搜索">
+        </activity>
     </application>
 
 </manifest>

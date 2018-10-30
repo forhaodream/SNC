@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.land.ch.smartnewcountryside"
-        minSdkVersion 15
+        minSdkVersion 18
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -14,6 +14,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
         }
     }
 }
@@ -34,4 +39,7 @@ dependencies {
     implementation 'com.github.forhaodream.ch:chtool:0.0.1'
     //implementation 'com.github.Liquor6:liquor:1.0.4'
     implementation 'com.android.support:support-v4:28.0.0'
+
+    implementation(name: 'liquorslib-debug', ext: 'aar')
+
 }

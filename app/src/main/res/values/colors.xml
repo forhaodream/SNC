@@ -47,5 +47,7 @@
     <color name="line_default_color">#B3DD9B</color>
     <color name="theme_green">#267a3a</color>
 
+    <color name="blue">#ddf0ff</color>
+
     <color name="as_color">#efefef</color>
 </resources>

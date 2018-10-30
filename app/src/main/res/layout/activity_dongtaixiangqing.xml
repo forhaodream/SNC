@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220px"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/头像img"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:src="@mipmap/touxiang"/>
+
+        <TextView
+            android:id="@+id/姓名tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/头像img"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/头像img"
+            android:text="桦南县果树购销中心"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/头像img"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/姓名tv"
+            android:background="@color/blue"
+            android:text="企业"
+            android:textColor="@color/dark_blue"/>
+
+        <TextView
+            android:id="@+id/时间tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/姓名tv"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@id/头像img"
+            android:text="6分钟前"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ImageView
+        android:id="@+id/detail_img"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:src="@color/blue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="30px"
+        android:text="山东优质小黄姜大量上市了"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="30px"
+        android:text="#我要卖货"
+        android:textColor="#475c87"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="60px"
+        android:background="@color/as_color"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/加关注rlc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/guanzhu_hui"
+                android:drawablePadding="10px"
+                android:text="加关注"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/聊一聊rlc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/duanxin_hui"
+                android:drawablePadding="10px"
+                android:text="聊一聊"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/打电话rlc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/dianhua"
+                android:drawablePadding="10px"
+                android:text="打电话"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/浏览次数tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="60px"
+        android:text="78次浏览  0评论  0赞"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="130px"
+        android:background="@color/text_gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>
