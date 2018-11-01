@@ -38,24 +38,64 @@
                 android:layout_marginLeft="60px"
                 android:drawableLeft="@mipmap/search"
                 android:drawablePadding="12px"
-                android:text="搜索"
+                android:text="搜索农产品 地区"
                 android:textColor="@color/home_search_text_hui"
                 android:textSize="12sp"/>
 
         </com.zhy.autolayout.AutoRelativeLayout>
 
-        <ImageView
-            android:id="@+id/浏览记录img"
-            android:layout_width="70px"
-            android:layout_height="70px"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="30px"
-            android:src="@mipmap/liulanjilu"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420px">
+
+        <com.land.ch.smartnewcountryside.view.AutoSwitchView
+            android:id="@+id/fragment_home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"/>
+
     </com.zhy.autolayout.AutoRelativeLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/RecyclerView"
+        android:id="@+id/type_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="220px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@color/as_color"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:text="关注的产品"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/kind_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:layout_marginTop="30px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@color/as_color"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/下面列表rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </com.zhy.autolayout.AutoLinearLayout>

@@ -1,10 +1,12 @@
 package com.land.ch.smartnewcountryside.全国行情;
 
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
+import com.land.ch.smartnewcountryside.view.AutoSwitchView;
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import ch.chtool.base.BaseActivity;
@@ -18,6 +20,10 @@ public class 全国行情 extends BaseActivity implements View.OnClickListener {
     private AutoRelativeLayout m搜索rlc;
     private ImageView m浏览记录img;
     private RecyclerView mRecyclerView;
+    private AutoSwitchView mFragmentHomeBanner;
+    private RecyclerView mTypeRecyclerView;
+    private RecyclerView mKindRecyclerView;
+    private RecyclerView m下面列表rv;
 
     @Override
     public int initLayout() {
@@ -27,12 +33,15 @@ public class 全国行情 extends BaseActivity implements View.OnClickListener {
     @Override
     public void initView() {
 
+
         mHomeAddressTv = (ImageView) findViewById(R.id.home_address_tv);
         mHomeAddressTv.setOnClickListener(this);
         m搜索rlc = (AutoRelativeLayout) findViewById(R.id.搜索rlc);
-        m浏览记录img = (ImageView) findViewById(R.id.浏览记录img);
-        m浏览记录img.setOnClickListener(this);
-        mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView);
+        m搜索rlc.setOnClickListener(this);
+        mFragmentHomeBanner = (AutoSwitchView) findViewById(R.id.fragment_home_banner);
+        mTypeRecyclerView = (RecyclerView) findViewById(R.id.type_RecyclerView);
+        mKindRecyclerView = (RecyclerView) findViewById(R.id.kind_RecyclerView);
+        m下面列表rv = (RecyclerView) findViewById(R.id.下面列表rv);
     }
 
     @Override
@@ -47,6 +56,9 @@ public class 全国行情 extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.浏览记录img:
                 break;
+            case R.id.搜索rlc:
+                break;
         }
     }
+
 }

@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.land.ch.smartnewcountryside">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -148,14 +157,39 @@
         <activity
             android:name=".activity.KindsActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".讲农堂.讲农堂详细"/>
-        <activity android:name=".农产品.西瓜"/>
-        <activity android:name=".招聘.招聘详情">
-        </activity>
-        <activity android:name=".首页.名优特产">
-        </activity>
-        <activity android:name=".搜索.搜索">
-        </activity>
+        <activity
+            android:name=".萤石监控.监控测试"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".讲农堂.讲农堂详细"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".农产品.西瓜"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".招聘.招聘详情"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.名优特产"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".搜索.搜索"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".我的.个人信息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".广告位.广告位"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".其它页.专区"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".广告位.广告页详细"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".全国行情.种类详情"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
