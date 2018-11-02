@@ -164,10 +164,45 @@
 
         <EditText
             android:id="@+id/editview"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="180px"
             android:layout_centerVertical="true"
             android:layout_marginLeft="60px"
-            android:background="@android:color/white"/>
+            android:layout_marginRight="60px"
+            android:background="@android:color/white"
+            android:hint="在这里评论...请勿发广告哦     "
+            android:maxLines="1"
+            android:paddingLeft="50px"/>
+
+
+        <ImageView
+            android:id="@+id/点赞img"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60px"
+            android:src="@mipmap/dianzan"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/评论rlc"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60px"
+            android:layout_toLeftOf="@id/点赞img"
+            android:background="@mipmap/duanxin">
+
+            <TextView
+                android:id="@+id/评论数tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-10px"
+                android:text="45"
+                android:textColor="@color/theme_green"/>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
     </com.zhy.autolayout.AutoRelativeLayout>
 </com.zhy.autolayout.AutoLinearLayout>

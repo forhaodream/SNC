@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/as_color"
+    android:orientation="vertical"
+    tools:context=".我的.经办人">
+
+    <include layout="@layout/layout_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:drawableRight="@mipmap/red_star"
+        android:text="所在地区"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/所在地区ed"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@android:color/white"
+        android:hint="点击获取所在地区"
+        android:paddingLeft="30px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="详细地址(如:XX乡XX村)"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/详细地址ed"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@android:color/white"
+        android:paddingLeft="30px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:drawableRight="@mipmap/red_star"
+        android:text="联系人 (与对应手机号对应的真实姓名)"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/联系人ed"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@android:color/white"
+        android:paddingLeft="30px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:drawableRight="@mipmap/red_star"
+        android:text="主营品种"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/主营品种ed"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@android:color/white"
+        android:hint="点击输入品类"
+        android:paddingLeft="30px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:drawableRight="@mipmap/red_star"
+        android:text="从业年限 (请填写整数 单位: 年)"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/从业年限ed"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@android:color/white"
+        android:paddingLeft="30px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="代办费用 (请填写收费标准)"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/代办费用ed"
+        android:layout_width="match_parent"
+        android:layout_height="330px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@android:color/white"
+        android:paddingLeft="30px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="40px"
+        android:drawableLeft="@mipmap/red_star"
+        android:text="均为必填项, 请按照真实情况如实填写"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/保存btn"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="60px"
+        android:background="@color/theme_green"
+        android:text="保存"
+        android:textColor="@android:color/white"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

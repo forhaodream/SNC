@@ -1,9 +1,9 @@
-package com.land.ch.smartnewcountryside.招聘;
+package com.land.ch.smartnewcountryside.农产品;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,54 +12,32 @@ import com.zhy.autolayout.AutoRelativeLayout;
 
 import ch.chtool.base.BaseActivity;
 
-/**
- * Created by CH
- * on 2018/10/17 10:06
- */
-public class 招聘特权 extends BaseActivity implements View.OnClickListener {
+public class 要货报价 extends BaseActivity implements View.OnClickListener {
+
     private ImageView mLayoutTitleBack;
     private TextView mLayoutTitleText;
     private AutoRelativeLayout mLayoutTitleRlc;
-    private WebView mWebView;
-    /**
-     * 立即购买
-     */
-    private Button m立即购买btn;
+    private RecyclerView mRecyclerView;
 
-    /**
-     * 设置布局
-     *
-     * @return
-     */
+
     @Override
     public int initLayout() {
-        return R.layout.activity_zhaopintequan;
+        return R.layout.activity_yaohuobaojia;
     }
 
-    /**
-     * 初始化布局
-     */
     @Override
     public void initView() {
         mLayoutTitleBack = (ImageView) findViewById(R.id.layout_title_back);
         mLayoutTitleBack.setOnClickListener(this);
         mLayoutTitleText = (TextView) findViewById(R.id.layout_title_text);
-        mLayoutTitleText.setText("招聘特权");
-        mLayoutTitleText.setOnClickListener(this);
         mLayoutTitleRlc = (AutoRelativeLayout) findViewById(R.id.layout_title_rlc);
-        mWebView = (WebView) findViewById(R.id.WebView);
-        m立即购买btn = (Button) findViewById(R.id.立即购买btn);
-        m立即购买btn.setOnClickListener(this);
+        mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView);
     }
 
-    /**
-     * 设置数据
-     */
     @Override
     public void initData() {
 
     }
-
 
     @Override
     public void onClick(View v) {
@@ -67,12 +45,6 @@ public class 招聘特权 extends BaseActivity implements View.OnClickListener {
             case R.id.layout_title_back:
                 finish();
                 break;
-            case R.id.立即购买btn:
-                break;
-            case R.id.layout_title_text:
-                break;
         }
     }
-
-
 }

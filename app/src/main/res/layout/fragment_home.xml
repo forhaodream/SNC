@@ -147,7 +147,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/shngyiquan"/>
 
                 <com.zhy.autolayout.AutoLinearLayout
                     android:layout_width="0dp"
@@ -161,7 +161,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/tupiankanbing"/>
 
                     <ImageView
                         android:id="@+id/全国行情"
@@ -169,7 +169,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/quanguohangqign"/>
                 </com.zhy.autolayout.AutoLinearLayout>
 
 
@@ -198,7 +198,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/youxuanjidi"/>
 
                     <ImageView
                         android:id="@+id/视频直播"
@@ -206,7 +206,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:scaleType="fitXY"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/shipinzhibo"/>
                 </com.zhy.autolayout.AutoLinearLayout>
 
                 <ImageView
@@ -244,9 +244,9 @@
                     android:text="优选农村"/>
 
                 <TextView
-                    android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="30px"
                     android:drawableRight="@mipmap/doublejiantou"
@@ -320,9 +320,9 @@
                     android:text="为你推荐"/>
 
                 <TextView
-                    android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="30px"
                     android:drawableRight="@mipmap/doublejiantou"

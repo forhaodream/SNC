@@ -4,7 +4,6 @@
           package="com.land.ch.smartnewcountryside">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission
@@ -190,6 +189,32 @@
         <activity
             android:name=".全国行情.种类详情"
             android:screenOrientation="portrait"/>
+        <activity android:name=".农产品.发布货源">
+        </activity>
+        <activity android:name=".农产品.农产品要货详情">
+        </activity>
+        <activity android:name=".农产品.继续要货">
+        </activity>
+        <activity android:name=".我的.经办人">
+        </activity>
+        <activity android:name=".农产品.要货报价">
+        </activity>
+        <activity android:name=".其它页.商机推荐">
+        </activity>
+        <activity android:name=".农产品.发布资源">
+        </activity>
+        <activity android:name=".农产品.发布供应">
+        </activity>
+        <activity android:name=".我的特权.婚恋特权">
+        </activity>
+        <activity android:name=".发采购.发采购">
+        </activity>
+        <activity android:name=".农产品.发布要货">
+        </activity>
+        <activity android:name=".讲农堂.高手店铺">
+        </activity>
+        <activity android:name=".讲农堂.讲农堂高手详情">
+        </activity>
     </application>
 
 </manifest>

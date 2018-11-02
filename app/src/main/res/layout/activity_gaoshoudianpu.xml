@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".讲农堂.高手店铺">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/layout_title_rlc"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/layout_title_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="刘二狗的店铺"
+                android:textColor="@color/text_grays"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/layout_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:text="分享"
+                android:textColor="@color/text_grays"
+                android:textSize="14sp"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:background="@mipmap/jiangnongtang_bg">
+
+            <ImageView
+                android:id="@+id/头像img"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/姓名tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/头像img"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/头像img"
+                android:text="姓名"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/地址tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/姓名tv"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:layout_toRightOf="@id/头像img"
+                android:text="地址"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/身份tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/地址tv"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:layout_toRightOf="@id/头像img"
+                android:text="身份"
+                android:textColor="@android:color/white"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginTop="30px">
+
+            <com.land.ch.smartnewcountryside.view.MyRatingBar
+                android:id="@+id/MyRatingBar"
+                android:layout_width="300px"
+                android:layout_height="100px"/>
+
+            <TextView
+                android:id="@+id/等级tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/MyRatingBar"
+                android:text="4.7"
+                android:textColor="@color/theme_green"/>
+
+            <TextView
+                android:id="@+id/评论数tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/等级tv"
+                android:text="(18评价)"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/身份img"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:background="@color/as_color">
+
+            <TextView
+                android:id="@+id/在售供应tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:text="在售供应(1)"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ch.chtool.view.MyListView
+            android:id="@+id/MyListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="@color/as_color"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/加关注tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:drawableLeft="@color/color_9"
+            android:text="加关注"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/聊一聊btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/theme_green"
+            android:drawableLeft="@mipmap/dianhua"
+            android:text="聊一聊"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/打电话btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@android:color/holo_orange_dark"
+            android:drawableLeft="@color/color_9"
+            android:text="打电话"
+            android:textColor="@android:color/white"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

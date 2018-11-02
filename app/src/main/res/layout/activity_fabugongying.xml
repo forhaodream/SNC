@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/as_color"
+    tools:context=".农产品.发布供应">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title"/>
+
+        <ImageView
+            android:id="@+id/上传img"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="50px"
+            android:src="@mipmap/shipinzhibo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="上传图片"
+            android:textColor="@color/text_grays"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:text="标题:"
+            android:textColor="@color/text_grays"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/标题ed"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginTop="30px"
+            android:background="@android:color/white"
+            android:hint="点击输入: 供应名称, 规格, 吸引人的标题"
+            android:paddingLeft="30px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:text="说明:"
+            android:textColor="@color/text_grays"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/说明ed"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginTop="30px"
+            android:background="@android:color/white"
+            android:hint="点击输入:详细介绍一下你的供应, 包括质量特色和一些服务"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="50px"
+            android:background="@android:color/white"
+            android:text="100元/斤"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="50px"
+            android:background="@android:color/white"
+            android:text="收货地址"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/完成btn"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_green"
+        android:text="完成"
+        android:textColor="@android:color/white"/>
+</com.zhy.autolayout.AutoRelativeLayout>

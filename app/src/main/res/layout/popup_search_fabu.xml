@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/发布采购rlc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/id1"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px"
+                android:src="@mipmap/gou"/>
+
+            <TextView
+                android:id="@+id/id2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:text="发布采购"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:text="获得全国报价"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/as_color"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/发布供应rlc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/id11"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px"
+                android:src="@mipmap/huo"/>
+
+            <TextView
+                android:id="@+id/id22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:text="发布供应"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id22"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:text="采购商都能看到"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/取消btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/as_color"
+        android:text="取 消"
+        android:textColor="@color/text_grays"/>
+</com.zhy.autolayout.AutoLinearLayout>

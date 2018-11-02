@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".农产品.发布资源">
+
+    <include layout="@layout/layout_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22px"
+        android:background="@color/as_color"/>
+
+    <com.example.liquorslib.view.VShowView
+        android:id="@+id/出发地vss"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        app:VS_label="出发地"/>
+
+    <com.example.liquorslib.view.VEditText
+        android:id="@+id/到达地vss"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        app:VE_label="到达地"
+        app:VE_valueHint="中国辽宁省沈阳市"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22px"
+        android:background="@color/as_color"/>
+
+    <com.example.liquorslib.view.VTextView
+        android:id="@+id/车型要求vt"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        app:VT_imageRight="@mipmap/back_right"
+        app:VT_label="车型要求"/>
+
+    <com.example.liquorslib.view.VShowView
+        android:id="@+id/货物名称vss"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        app:VS_label="货物名称"
+        app:VS_value="西瓜"/>
+
+    <com.example.liquorslib.view.VEditText
+        android:id="@+id/货物重量vss"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        app:VE_label="货物重量"
+        app:VE_valueHint="请输入货物重量(吨)"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22px"
+        android:background="@color/as_color"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:text="备注重量"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/备注信息ed"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:background="@android:color/white"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/确认发布btn"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="60px"
+        android:background="@color/text_gray"
+        android:text="确认发布"
+        android:textColor="@android:color/white"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
