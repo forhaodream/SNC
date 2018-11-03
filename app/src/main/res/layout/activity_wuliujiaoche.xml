@@ -7,52 +7,74 @@
     android:orientation="vertical">
 
     <com.zhy.autolayout.AutoRelativeLayout
-        android:id="@+id/标题栏"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/title_name"
-        android:background="@color/white">
+        android:layout_height="150px"
+        android:background="@android:color/white">
 
         <ImageView
-            android:id="@+id/layout_title_back"
-            android:layout_width="23dp"
-            android:layout_height="23dp"
+            android:id="@+id/home_address_tv"
+            android:layout_width="70px"
+            android:layout_height="70px"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30px"
             android:src="@mipmap/back"/>
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="wrap_content"
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/搜索rlc"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            app:tabIndicatorColor="@color/theme_green"
-            app:tabMode="fixed"
-            app:tabSelectedTextColor="@color/theme_green"
-            app:tabTextColor="@color/black"/>
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="170px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@id/home_address_tv"
+            android:background="@drawable/draw_home_search_bg">
 
-        <TextView
-            android:id="@+id/我tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="12px"
+                android:text="搜索"
+                android:textColor="@color/home_search_text_hui"
+                android:textSize="12sp"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ImageView
+            android:id="@+id/浏览记录img"
+            android:layout_width="70px"
+            android:layout_height="70px"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
-            android:text="我"
-            android:textSize="15sp"/>
-        <!--<ImageView-->
-        <!--android:id="@+id/fwjs_detail_sousuo"-->
-        <!--android:layout_width="23dp"-->
-        <!--android:layout_height="23dp"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:layout_marginRight="10dp"-->
-        <!--android:src="@mipmap/sousuo" />-->
+            android:layout_marginRight="30px"
+            android:src="@mipmap/touxiang"/>
     </com.zhy.autolayout.AutoRelativeLayout>
 
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/text_orange"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_orange"
+        app:tabTextColor="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="1px"
+        android:background="@color/text_grays"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="#ffffff"/>
 </com.zhy.autolayout.AutoLinearLayout>

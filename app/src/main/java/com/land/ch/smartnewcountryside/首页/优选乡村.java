@@ -1,13 +1,7 @@
 package com.land.ch.smartnewcountryside.首页;
 
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.land.ch.smartnewcountryside.R;
@@ -44,15 +38,17 @@ public class 优选乡村 extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void initView() {
-        mHomeSearchRl = (AutoRelativeLayout) mView.findViewById(R.id.home_search_rl);
-        mHomeSearchRl.setOnClickListener(this);
-        m乡村浏览记录 = (ImageView) mView.findViewById(R.id.乡村浏览记录);
-        m优选乡村分类标签 = (MyGridView) mView.findViewById(R.id.优选乡村分类标签);
-        mRecyclerView = (RecyclerView) mView.findViewById(R.id.recyclerView);
+
+        mHomeSearchRl = (AutoRelativeLayout) findViewById(R.id.home_search_rl);
+        m乡村浏览记录 = (ImageView) findViewById(R.id.乡村浏览记录);
+        m优选乡村分类标签 = (MyGridView) findViewById(R.id.优选乡村分类标签);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
     }
 
     @Override
     public void initData() {
 
     }
+
+
 }

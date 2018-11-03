@@ -45,7 +45,6 @@ public class 直营商城 extends AppCompatActivity {
 
     public void initData() {
         titleTv = findViewById(R.id.layout_title_text);
-        titleTv.setText("直营商城");
         mFragmentList = new ArrayList<>();
         titles = new String[]{"已购特权", "购买记录", "购买记录", "购买记录", "购买记录", "购买记录"};
         //页面，数据源
@@ -61,13 +60,13 @@ public class 直营商城 extends AppCompatActivity {
         sendBroadcast(intent);
         pager = findViewById(R.id.viewPager);
         tab = findViewById(R.id.tabLayout);
-        returnImg = findViewById(R.id.layout_title_back);
-        returnImg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+//        returnImg = findViewById(R.id.layout_title_back);
+//        returnImg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//            }
+//        });
         //ViewPager的适配器
         adapter = new MyAdapter(getSupportFragmentManager());
         pager.setAdapter(adapter);

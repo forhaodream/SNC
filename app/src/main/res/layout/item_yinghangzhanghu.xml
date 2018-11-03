@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_blue"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/头像RoundedImageView"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:src="@color/red"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:id="@+id/银行名tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/头像RoundedImageView"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@id/头像RoundedImageView"
+        android:text="建设银行"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/类型tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/银行名tv"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/头像RoundedImageView"
+        android:text="储蓄卡"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/卡号tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/类型tv"
+        android:layout_marginBottom="60px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/头像RoundedImageView"
+        android:text="****  **** **** 1234"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"/>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

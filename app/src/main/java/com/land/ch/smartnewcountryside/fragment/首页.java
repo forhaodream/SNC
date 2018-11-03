@@ -21,18 +21,27 @@ import com.land.ch.smartnewcountryside.utils.RecyclerAdapter;
 import com.land.ch.smartnewcountryside.utils.RecyclerViewHolder;
 import com.land.ch.smartnewcountryside.view.AutoSwitchView;
 import com.land.ch.smartnewcountryside.代养代种.代养代种;
+import com.land.ch.smartnewcountryside.优选基地.优选基地;
+import com.land.ch.smartnewcountryside.全国行情.全国行情;
 import com.land.ch.smartnewcountryside.全城热恋.全城热恋;
-import com.land.ch.smartnewcountryside.招聘.发布详情;
-import com.land.ch.smartnewcountryside.首页.招聘信息;
+import com.land.ch.smartnewcountryside.其它页.优质供应商;
+import com.land.ch.smartnewcountryside.发采购.发采购;
+import com.land.ch.smartnewcountryside.我的.图片看病;
 import com.land.ch.smartnewcountryside.物流叫车.物流叫车;
 import com.land.ch.smartnewcountryside.生意圈.生意圈;
 import com.land.ch.smartnewcountryside.首页.优质基地;
 import com.land.ch.smartnewcountryside.首页.优选乡村;
 import com.land.ch.smartnewcountryside.首页.全部品类;
+import com.land.ch.smartnewcountryside.首页.农产品;
 import com.land.ch.smartnewcountryside.首页.农家院;
+import com.land.ch.smartnewcountryside.首页.名优特产;
 import com.land.ch.smartnewcountryside.首页.土地流转;
 import com.land.ch.smartnewcountryside.首页.小视频;
+import com.land.ch.smartnewcountryside.首页.招聘信息;
+import com.land.ch.smartnewcountryside.首页.更改位置;
+import com.land.ch.smartnewcountryside.首页.直播;
 import com.land.ch.smartnewcountryside.首页.直营商城;
+import com.land.ch.smartnewcountryside.首页.视频直播;
 import com.land.ch.smartnewcountryside.首页.采摘;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
@@ -61,10 +70,7 @@ public class 首页 extends Fragment implements View.OnClickListener {
     private ImageView 首页广告二;
     private ImageView 首页广告三;
     private MyGridView 优选农村;
-    private ImageView 优质供应商;
-    private ImageView 名优特产;
-    private ImageView 首页广告四;
-    private RecyclerView 首页商品展示;
+
     private HomeTypeBean mHomeTypeBean;
     private List<HomeTypeBean> mHomeTypes;
     private int typeImg[] = {R.mipmap.ncp, R.mipmap.dydz, R.mipmap.zb, R.mipmap.cz, R.mipmap.njy,
@@ -144,7 +150,7 @@ public class 首页 extends Fragment implements View.OnClickListener {
         m首页广告一.setOnClickListener(this);
         m首页广告二 = (ImageView) mView.findViewById(R.id.首页广告二);
         m首页广告二.setOnClickListener(this);
-        m发采购 = (ImageView) mView.findViewById(R.id.发采购);
+        m发采购 = (ImageView) mView.findViewById(R.id.发采购img);
         m发采购.setOnClickListener(this);
         m生意圈 = (ImageView) mView.findViewById(R.id.生意圈);
         m生意圈.setOnClickListener(this);
@@ -230,9 +236,8 @@ public class 首页 extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            default:
-                break;
             case R.id.home_address_tv:
+                startActivity(new Intent(getActivity(), 更改位置.class));
                 break;
             case R.id.home_search_rl:
                 break;
@@ -252,31 +257,38 @@ public class 首页 extends Fragment implements View.OnClickListener {
                 intent2.putExtra("webUrl", "");
                 startActivity(intent2);
                 break;
-            case R.id.发采购:
+            case R.id.发采购img:
+                startActivity(new Intent(getActivity(), 发采购.class));
                 break;
             case R.id.生意圈:
+                startActivity(new Intent(getActivity(), 生意圈.class));
                 break;
             case R.id.图片看病:
+                startActivity(new Intent(getActivity(), 图片看病.class));
                 break;
             case R.id.全国行情:
+                startActivity(new Intent(getActivity(), 全国行情.class));
                 break;
             case R.id.优选基地:
+                startActivity(new Intent(getActivity(), 优选基地.class));
                 break;
             case R.id.视频直播:
+                startActivity(new Intent(getActivity(), 视频直播.class));
                 break;
             case R.id.代养代种:
+                startActivity(new Intent(getActivity(), 代养代种.class));
                 break;
             case R.id.首页广告三:
                 break;
-
             case R.id.优质供应商:
+                startActivity(new Intent(getActivity(), 优质供应商.class));
                 break;
             case R.id.名优特产:
+                startActivity(new Intent(getActivity(), 名优特产.class));
                 break;
             case R.id.首页广告四:
                 break;
-            case R.id.首页商品展示:
-                break;
+
         }
     }
 }

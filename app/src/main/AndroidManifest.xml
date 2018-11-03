@@ -13,12 +13,14 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
+        android:name=".app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
         <meta-data
             android:name="design_width"
             android:value="1080"/>
@@ -31,6 +33,11 @@
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity
@@ -133,10 +140,16 @@
             android:name=".首页.土地流转"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".首页.农产品"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".首页.优质基地"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".首页.招聘信息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".首页.更改位置"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".生意圈.生意圈"
@@ -189,6 +202,9 @@
         <activity
             android:name=".全国行情.种类详情"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".全国行情.全国行情"
+            android:screenOrientation="portrait"/>
         <activity android:name=".农产品.发布货源">
         </activity>
         <activity android:name=".农产品.农产品要货详情">
@@ -214,6 +230,8 @@
         <activity android:name=".讲农堂.高手店铺">
         </activity>
         <activity android:name=".讲农堂.讲农堂高手详情">
+        </activity>
+        <activity android:name=".我的.添加村庄">
         </activity>
     </application>
 

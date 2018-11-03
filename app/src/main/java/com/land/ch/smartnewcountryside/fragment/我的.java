@@ -18,8 +18,8 @@ import com.land.ch.smartnewcountryside.activity.WebViewActivity;
 import com.land.ch.smartnewcountryside.adapter.MineTypeAdapter;
 import com.land.ch.smartnewcountryside.bean.MineTypeBean;
 import com.land.ch.smartnewcountryside.view.VSSView;
-import com.land.ch.smartnewcountryside.完善名片信息.完善个人信息;
 import com.land.ch.smartnewcountryside.全城热恋.全城热恋;
+import com.land.ch.smartnewcountryside.完善名片信息.完善个人信息;
 import com.land.ch.smartnewcountryside.帮助中心.意见反馈;
 import com.land.ch.smartnewcountryside.我的.图片看病;
 import com.land.ch.smartnewcountryside.我的.我的余额;
@@ -37,6 +37,7 @@ import com.land.ch.smartnewcountryside.我的.收货地址;
 import com.land.ch.smartnewcountryside.我的.设置;
 import com.land.ch.smartnewcountryside.我的.银行账户;
 import com.land.ch.smartnewcountryside.首页.招聘信息;
+import com.mob.MobSDK;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
 
@@ -46,6 +47,7 @@ import java.util.List;
 import java.util.Map;
 
 import ch.chtool.view.MyGridView;
+import cn.sharesdk.onekeyshare.OnekeyShare;
 
 /**
  * Created by CH
@@ -255,7 +257,8 @@ public class 我的 extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.待付款:
-                intentAty(我的订单.class);
+                showShare();
+//                intentAty(我的订单.class);
                 break;
             case R.id.待发货:
                 intentAty(我的订单.class);
@@ -301,4 +304,26 @@ public class 我的 extends Fragment implements View.OnClickListener {
         startActivity(new Intent(getActivity(), activity));
     }
 
+
+    private void showShare() {
+        MobSDK.init(getActivity());
+        OnekeyShare oks = new OnekeyShare();
+        //关闭sso授权
+        oks.disableSSOWhenAuthorize();
+
+        // title标题，微信、QQ和QQ空间等平台使用
+        oks.setTitle(getString(R.string.share));
+        // titleUrl QQ和QQ空间跳转链接
+        oks.setTitleUrl("http://sharesdk.cn");
+        // text是分享文本，所有平台都需要这个字段
+        oks.setText("我是分享文本");
+        // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
+        oks.setImagePath("/sdcard/test.jpg");//确保SDcard下面存在此张图片
+        // url在微信、微博，Facebook等平台中使用
+        oks.setUrl("http://sharesdk.cn");
+        // comment是我对这条分享的评论，仅在人人网使用
+        oks.setComment("我是测试评论文本");
+        // 启动分享GUI
+        oks.show(getActivity());
+    }
 }

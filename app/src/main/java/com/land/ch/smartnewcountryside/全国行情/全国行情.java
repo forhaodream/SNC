@@ -53,6 +53,7 @@ public class 全国行情 extends BaseActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.home_address_tv:
+                finish();
                 break;
             case R.id.浏览记录img:
                 break;

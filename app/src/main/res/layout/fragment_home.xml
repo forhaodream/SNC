@@ -68,7 +68,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
             <com.zhy.autolayout.AutoRelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="420px">
@@ -89,6 +88,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2px"
+                android:layout_marginTop="10px"
                 android:background="@color/gray"/>
 
             <android.support.v7.widget.RecyclerView
@@ -100,8 +100,9 @@
                 android:id="@+id/首页广告一"
                 android:layout_width="match_parent"
                 android:layout_height="200px"
+                android:layout_marginTop="20px"
                 android:scaleType="fitXY"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/guangaoyi"/>
 
             <View
                 android:layout_width="match_parent"
@@ -119,15 +120,19 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/moxian"/>
+                20 932551 3885
+
+
+                30 1150980.61 3197.17
 
                 <ImageView
-                    android:id="@+id/发采购"
+                    android:id="@+id/发采购img"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/facaigou"/>
 
             </com.zhy.autolayout.AutoLinearLayout>
 
@@ -138,7 +143,7 @@
 
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="700px"
+                android:layout_height="640px"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -182,7 +187,7 @@
 
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="700px"
+                android:layout_height="640px"
                 android:orientation="horizontal">
 
 
@@ -215,7 +220,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/caizhai"/>
 
             </com.zhy.autolayout.AutoLinearLayout>
 
@@ -224,7 +229,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200px"
                 android:scaleType="fitXY"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/guanggaoer"/>
 
             <View
                 android:layout_width="match_parent"
@@ -283,7 +288,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/youzhigongyingshang"/>
 
                 <ImageView
                     android:id="@+id/名优特产"
@@ -291,7 +296,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/mingyoutechan"/>
 
             </com.zhy.autolayout.AutoLinearLayout>
 
@@ -300,7 +305,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200px"
                 android:scaleType="fitXY"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/guanggaosan"/>
 
             <View
                 android:layout_width="match_parent"
