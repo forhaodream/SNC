@@ -1,7 +1,5 @@
 package com.land.ch.smartnewcountryside.首页;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -33,6 +31,7 @@ public class 名优特产 extends BaseActivity implements View.OnClickListener {
         mLayoutTitleBack = (ImageView) findViewById(R.id.layout_title_back);
         mLayoutTitleBack.setOnClickListener(this);
         mLayoutTitleText = (TextView) findViewById(R.id.layout_title_text);
+        mLayoutTitleText.setText("名优特产");
         mLayoutTitleText.setOnClickListener(this);
         mLayoutTitleRlc = (AutoRelativeLayout) findViewById(R.id.layout_title_rlc);
         mKindFlowLayout = (FlowLayout) findViewById(R.id.kind_flowLayout);

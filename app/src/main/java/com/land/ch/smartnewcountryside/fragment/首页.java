@@ -1,18 +1,24 @@
 package com.land.ch.smartnewcountryside.fragment;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.baidu.location.BDAbstractLocationListener;
+import com.baidu.location.BDLocation;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
 import com.land.ch.smartnewcountryside.R;
 import com.land.ch.smartnewcountryside.activity.KindsActivity;
 import com.land.ch.smartnewcountryside.activity.WebViewActivity;
@@ -50,6 +56,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ch.chtool.view.MyGridView;
+
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  * Created by CH
@@ -116,13 +124,27 @@ public class 首页 extends Fragment implements View.OnClickListener {
     private ImageView m名优特产;
     private ImageView m首页广告四;
     private RecyclerView m首页商品展示;
+    public LocationClient mLocationClient = null;
+    private MyLocationListener mListener = new MyLocationListener();
+    private String district;
+    private String addressStr = "";
+    private SharedPreferences addressSp;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initData();
+    }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_home, null);
+        addressSp = getActivity().getSharedPreferences("address_name", MODE_PRIVATE);
+        addressStr = addressSp.getString("address", "");
         initView(mView);
         initRecyclerView();
+        initData();
         return mView;
     }
 
@@ -133,7 +155,6 @@ public class 首页 extends Fragment implements View.OnClickListener {
         fragmentHomeBanner = (AutoSwitchView) mView.findViewById(R.id.fragment_home_banner);
         彩色分类 = mView.findViewById(R.id.彩色分类);
         绿色分类 = mView.findViewById(R.id.绿色分类);
-
         mHomeAddressTv = (TextView) mView.findViewById(R.id.home_address_tv);
         mHomeAddressTv.setOnClickListener(this);
         mHomeSearchRl = (AutoRelativeLayout) mView.findViewById(R.id.home_search_rl);
@@ -175,10 +196,16 @@ public class 首页 extends Fragment implements View.OnClickListener {
         m首页广告四.setOnClickListener(this);
         m首页商品展示 = (RecyclerView) mView.findViewById(R.id.首页商品展示);
         m首页商品展示.setOnClickListener(this);
+
     }
 
     private void initData() {
-
+        mLocationClient = new LocationClient(getActivity().getApplicationContext());
+        mLocationClient.registerLocationListener(mListener);
+        LocationClientOption option = new LocationClientOption();
+        option.setIsNeedAddress(true);
+        mLocationClient.setLocOption(option);
+        mLocationClient.start();
 
     }
 
@@ -291,4 +318,19 @@ public class 首页 extends Fragment implements View.OnClickListener {
 
         }
     }
+
+    public class MyLocationListener extends BDAbstractLocationListener {
+        @Override
+        public void onReceiveLocation(BDLocation location) {
+            district = location.getDistrict();    //获取区县
+            if (!TextUtils.isEmpty(district)) {
+                homeAddressTv.setText(district);
+            } else {
+                homeAddressTv.setText(addressStr);
+            }
+        }
+
+    }
+
+
 }

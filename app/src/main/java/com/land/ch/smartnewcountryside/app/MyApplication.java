@@ -2,6 +2,7 @@ package com.land.ch.smartnewcountryside.app;
 
 import android.app.Application;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.land.ch.smartnewcountryside.R;
 import com.mob.MobSDK;
 
@@ -16,6 +17,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         MobSDK.init(this);
+        SDKInitializer.initialize(getApplicationContext());
     }
 
 

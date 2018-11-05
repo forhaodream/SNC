@@ -18,7 +18,6 @@
             android:layout_marginLeft="30px"
             android:drawablePadding="16px"
             android:drawableRight="@mipmap/down"
-            android:text="沈阳市"
             android:textColor="@color/home_text_hui"
             android:textSize="14sp"/>
 

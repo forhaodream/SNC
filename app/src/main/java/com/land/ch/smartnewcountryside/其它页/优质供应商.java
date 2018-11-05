@@ -36,6 +36,7 @@ public class 优质供应商 extends BaseActivity implements View.OnClickListene
         mLayoutTitleBack = (ImageView) findViewById(R.id.layout_title_back);
         mLayoutTitleBack.setOnClickListener(this);
         mLayoutTitleText = (TextView) findViewById(R.id.layout_title_text);
+        mLayoutTitleText.setText("优质供应商");
         mLayoutTitleRlc = (AutoRelativeLayout) findViewById(R.id.layout_title_rlc);
         mLayoutTitleRlc.setOnClickListener(this);
         mKindFlowLayout = (FlowLayout) findViewById(R.id.kind_flowLayout);

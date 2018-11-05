@@ -10,7 +10,22 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+
+
+
     }
+//    sourceSets{
+//        main{
+//            jnilibs.srcDir 'libs'
+//            jni.srcDirs = []    //disable automatic ndk-build
+//        }
+//    }
     buildTypes {
         release {
             minifyEnabled false
@@ -72,6 +87,7 @@ android {
             }
         }
     }
+
 }
 
 dependencies {
@@ -91,4 +107,5 @@ dependencies {
     implementation 'com.android.support:support-v4:28.0.0'
     implementation(name: 'liquorslib-debug', ext: 'aar')
     implementation files('libs/EZOpenSDK_V4.8.3.20180530.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
 }

@@ -24,12 +24,23 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.baidu.location.BDAbstractLocationListener;
+import com.baidu.location.BDLocation;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
+import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.MapStatus;
+import com.baidu.mapapi.map.MapStatusUpdateFactory;
+import com.baidu.mapapi.map.MyLocationConfiguration;
+import com.baidu.mapapi.map.MyLocationData;
+import com.baidu.mapapi.model.LatLng;
 import com.land.ch.smartnewcountryside.R;
 import com.land.ch.smartnewcountryside.fragment.我的;
 import com.land.ch.smartnewcountryside.fragment.农产品;
 import com.land.ch.smartnewcountryside.fragment.直播;
 import com.land.ch.smartnewcountryside.fragment.聊一聊;
 import com.land.ch.smartnewcountryside.fragment.首页;
+import com.land.ch.smartnewcountryside.首页.更改位置;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +75,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private SharedPreferences readInfo;
     private SharedPreferences.Editor editor;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,12 +109,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         addView();
         Intent intent = getIntent();
         int index = intent.getIntExtra("huan", -1);
-//        grownNum = intent.getIntExtra("grown_state", 0);
-//        if (grownNum == 1) {
-//            Toast.makeText(this, "已激活中国考试志愿网", Toast.LENGTH_SHORT).show();
-//        } else {
-//            showNormalDialog();
-//        }
         readInfo = getSharedPreferences("save_update", Context.MODE_PRIVATE);
         editor = readInfo.edit();
         Log.d("home_index", String.valueOf(index));
@@ -139,7 +145,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         return res;
     }
 
+
+
     private void addView() {
+
         //实例化控件
         this.首页Img = findViewById(R.id.home_image);
         this.物流叫车Img = findViewById(R.id.car_image);
