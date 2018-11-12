@@ -12,10 +12,8 @@ import android.widget.TextView;
 
 import com.baidu.location.BDAbstractLocationListener;
 import com.baidu.location.BDLocation;
-import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
-import com.baidu.location.Poi;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
@@ -29,8 +27,6 @@ import com.baidu.mapapi.model.LatLng;
 import com.land.ch.smartnewcountryside.R;
 import com.land.ch.smartnewcountryside.activity.HomeActivity;
 import com.zhy.autolayout.AutoRelativeLayout;
-
-import java.util.List;
 
 /**
  * Created by CH

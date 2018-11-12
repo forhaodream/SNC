@@ -37,6 +37,11 @@ public class 发采购 extends AppCompatActivity implements View.OnClickListener
     private ViewPager mViewPager;
     private RecyclerView mRecyclerView;
 
+    private MyAdapter adapter;
+    private ImageView m广告一;
+    private ImageView m广告二;
+    private ImageView m广告三;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,29 +51,29 @@ public class 发采购 extends AppCompatActivity implements View.OnClickListener
     }
 
     public void initData() {
-//        mFragmentList = new ArrayList<>();
-//        titles = new String[]{"已购特权", "购买记录"};
-//        //页面，数据源
-//        mFragmentList.add(new 已购特权());
-//        mFragmentList.add(new 购买记录());
-//        Intent intent = new Intent("android.intent.action.CART_BROADCAST");
-//        intent.putExtra("data", "refresh");
-//        LocalBroadcastManager.getInstance(发采购.this).sendBroadcast(intent);
-//        sendBroadcast(intent);
-//        pager = findViewById(R.id.viewPager);
-//        tab = findViewById(R.id.tabLayout);
-//        returnImg = findViewById(R.id.layout_title_back);
-//        returnImg.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                finish();
-//            }
-//        });
-//        //ViewPager的适配器
-//        adapter = new MyAdapter(getSupportFragmentManager());
-//        pager.setAdapter(adapter);
-//        //绑定
-//        tab.setupWithViewPager(pager);
+        mFragmentList = new ArrayList<>();
+        titles = new String[]{"已购特权", "购买记录"};
+        //页面，数据源
+        mFragmentList.add(new 已购特权());
+        mFragmentList.add(new 购买记录());
+        Intent intent = new Intent("android.intent.action.CART_BROADCAST");
+        intent.putExtra("data", "refresh");
+        LocalBroadcastManager.getInstance(发采购.this).sendBroadcast(intent);
+        sendBroadcast(intent);
+        pager = findViewById(R.id.viewPager);
+        tab = findViewById(R.id.tabLayout);
+        returnImg = findViewById(R.id.layout_title_back);
+        returnImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        //ViewPager的适配器
+        adapter = new MyAdapter(getSupportFragmentManager());
+        pager.setAdapter(adapter);
+        //绑定
+        tab.setupWithViewPager(pager);
     }
 
     private void initView() {
@@ -78,6 +83,15 @@ public class 发采购 extends AppCompatActivity implements View.OnClickListener
         mLayoutTitleText.setText("发采购");
         mLayoutTitleRlc = findViewById(R.id.layout_title_rlc);
         mRecyclerView = findViewById(R.id.RecyclerView);
+        mLayoutTitleText = (TextView) findViewById(R.id.layout_title_text);
+        mLayoutTitleText.setOnClickListener(this);
+        mLayoutTitleRlc = (AutoRelativeLayout) findViewById(R.id.layout_title_rlc);
+        mLayoutTitleRlc.setOnClickListener(this);
+        m广告一 = (ImageView) findViewById(R.id.广告一);
+        m广告二 = (ImageView) findViewById(R.id.广告二);
+        m广告三 = (ImageView) findViewById(R.id.广告三);
+        mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        mViewPager = (ViewPager) findViewById(R.id.viewPager);
     }
 
     @Override
@@ -86,29 +100,33 @@ public class 发采购 extends AppCompatActivity implements View.OnClickListener
             case R.id.layout_title_back:
                 finish();
                 break;
+            case R.id.layout_title_text:
+                break;
+            case R.id.layout_title_rlc:
+                break;
         }
     }
 
-//    class MyAdapter extends FragmentPagerAdapter {
-//
-//        public MyAdapter(FragmentManager fm) {
-//            super(fm);
-//        }
-//
-//        @Override
-//        public Fragment getItem(int position) {
-//            return mFragmentList.get(position);
-//        }
-//
-//        @Override
-//        public int getCount() {
-//            return mFragmentList.size();
-//        }
-//
-//        //重写这个方法，将设置每个Tab的标题
-//        @Override
-//        public CharSequence getPageTitle(int position) {
-//            return titles[position];
-//        }
-//    }
+    class MyAdapter extends FragmentPagerAdapter {
+
+        public MyAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        //重写这个方法，将设置每个Tab的标题
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles[position];
+        }
+    }
 }

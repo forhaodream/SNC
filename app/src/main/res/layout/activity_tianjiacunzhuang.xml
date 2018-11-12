@@ -4,26 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical"
     tools:context=".我的.添加村庄">
 
     <include layout="@layout/layout_title"/>
 
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/省sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"/>
+
+        <Spinner
+            android:id="@+id/市sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/区sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
     <EditText
         android:id="@+id/村庄名称ed"
         android:layout_width="match_parent"
         android:layout_height="160px"
+        android:layout_margin="30px"
+        android:background="@drawable/gray_shape"
         android:hint="村庄名称"/>
 
     <EditText
         android:id="@+id/村庄介绍ed"
         android:layout_width="match_parent"
         android:layout_height="500px"
+        android:layout_margin="30px"
+        android:background="@drawable/gray_shape"
         android:hint="村庄介绍"/>
 
     <Button
         android:id="@+id/确认添加btn"
-        android:layout_width="300px"
+        android:layout_width="500px"
         android:layout_height="120px"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100px"

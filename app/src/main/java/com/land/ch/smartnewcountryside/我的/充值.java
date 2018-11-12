@@ -1,4 +1,4 @@
-package com.land.ch.smartnewcountryside.我的订单;
+package com.land.ch.smartnewcountryside.我的;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,17 +10,14 @@ import android.view.ViewGroup;
 
 import com.land.ch.smartnewcountryside.R;
 
-/**
- * Created by CH
- * on 2018/10/20 15:43
- */
-public class 全部 extends Fragment {
+public class 充值 extends Fragment {
+
     private View mView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.fragment_all_order, null);
+        mView = inflater.inflate(R.layout.activity_chognzhi, null);
         return mView;
     }
 }

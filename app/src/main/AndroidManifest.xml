@@ -12,19 +12,18 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-    <!-- 这个权限用于进行网络定位-->
+    <!-- 这个权限用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!-- 这个权限用于访问GPS定位-->
+    <!-- 这个权限用于访问GPS定位 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
     <uses-permission
         android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
         tools:ignore="ProtectedPermissions"/>
-
 
     <application
         android:name=".app.MyApplication"
@@ -41,7 +40,6 @@
         <meta-data
             android:name="design_height"
             android:value="1920"/>
-
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="ea2do633LWRUPPvSUF9ZM7rlGFU4HQGR">
@@ -259,6 +257,18 @@
         <activity android:name=".讲农堂.讲农堂高手详情">
         </activity>
         <activity android:name=".我的.添加村庄">
+        </activity>
+        <activity android:name=".我的.账户明细">
+        </activity>
+        <activity android:name=".我的.充值">
+        </activity>
+        <activity android:name=".我的.余额充值">
+        </activity>
+        <activity android:name=".登录.登录">
+        </activity>
+        <activity android:name=".登录.注册账号">
+        </activity>
+        <activity android:name=".我的订单.订单详情">
         </activity>
     </application>
 

@@ -43,7 +43,8 @@
         android:id="@+id/mapview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/layout_title_rlc"/>
+        android:layout_below="@id/layout_title_rlc"
+        android:layout_marginBottom="130px"/>
 
     <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"

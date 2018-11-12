@@ -10,9 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <include layout="@layout/layout_title"/>
-
 
         <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="match_parent"

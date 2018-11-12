@@ -326,7 +326,8 @@ public class 首页 extends Fragment implements View.OnClickListener {
             if (!TextUtils.isEmpty(district)) {
                 homeAddressTv.setText(district);
             } else {
-                homeAddressTv.setText(addressStr);
+                initData();
+                return;
             }
         }
 

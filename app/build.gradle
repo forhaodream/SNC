@@ -18,7 +18,6 @@ android {
         }
 
 
-
     }
 //    sourceSets{
 //        main{
@@ -102,8 +101,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.nex3z:flow-layout:1.2.2'
     // 类库
-    implementation 'com.github.forhaodream.ch:chtool:0.0.1'
-    //implementation 'com.github.Liquor6:liquor:1.0.4'
+    implementation 'com.github.forhaodream.ch:chtool:0.0.2'
     implementation 'com.android.support:support-v4:28.0.0'
     implementation(name: 'liquorslib-debug', ext: 'aar')
     implementation files('libs/EZOpenSDK_V4.8.3.20180530.jar')

@@ -1,47 +1,52 @@
 package com.land.ch.smartnewcountryside.我的;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.land.ch.smartnewcountryside.R;
 import com.zhy.autolayout.AutoRelativeLayout;
 
-/**
- * Created by CH
- * on 2018/10/18 15:05
- */
-public class 我的余额 extends AppCompatActivity implements View.OnClickListener {
+import ch.chtool.base.BaseActivity;
 
+public class 余额充值 extends BaseActivity implements View.OnClickListener {
 
     private ImageView mLayoutTitleBack;
     private TextView mLayoutTitleText;
     private AutoRelativeLayout mLayoutTitleRlc;
-    private TextView m可提现金额tv;
-    private TextView m不可提现金额tv;
-    private TextView m冻结金额tv;
-    private Button m充值btn;
-    private Button m提现btn;
+    /**
+     * 请输入充值金额
+     */
+    private EditText m余额充值ed;
+    /**
+     * 确认充值
+     */
+    private Button m确认充值btn;
+
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yue);
-        initView();
+    public int initLayout() {
+        return R.layout.activity_yuechognzhi;
     }
 
-
-    private void initView() {
+    @Override
+    public void initView() {
         mLayoutTitleBack = (ImageView) findViewById(R.id.layout_title_back);
         mLayoutTitleBack.setOnClickListener(this);
         mLayoutTitleText = (TextView) findViewById(R.id.layout_title_text);
         mLayoutTitleRlc = (AutoRelativeLayout) findViewById(R.id.layout_title_rlc);
-        mLayoutTitleRlc.setOnClickListener(this);
+        m余额充值ed = (EditText) findViewById(R.id.余额充值ed);
+        m确认充值btn = (Button) findViewById(R.id.确认充值btn);
+        m确认充值btn.setOnClickListener(this);
+    }
+
+    @Override
+    public void initData() {
+
     }
 
     @Override
@@ -50,8 +55,7 @@ public class 我的余额 extends AppCompatActivity implements View.OnClickListe
             case R.id.layout_title_back:
                 finish();
                 break;
-            case R.id.layout_title_rlc:
-                startActivity(new Intent(我的余额.this, 账户明细.class));
+            case R.id.确认充值btn:
                 break;
         }
     }
